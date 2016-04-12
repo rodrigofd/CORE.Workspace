@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="FDIT.Core.EWS.Cuenta.EsCuentaOffice365" ImageName="globe-share" />
+    </Actions>
+  </ActionDesign>
+  <NavigationItems>
+    <Items>
+      <Item Id="Configuración">
+        <Items>
+          <Item Id="@d049aeb5-813c-4a12-8b92-d481daecab9a" Caption="Exchange" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="@e85a8af8-6bdd-4cc6-a114-e010fe938582" ViewId="FDIT.Core.EWS.Cuenta_ListView" Caption="Cuentas " IsNewNode="True" />
+              <Item Id="Singleton_FDIT.Core.EWS.Identificadores" ViewId="FDIT.Core.EWS.Identificadores_DetailView" Caption="Preferencias" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="13.1.12.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.1.12.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

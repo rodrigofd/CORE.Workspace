@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+    <DetailView Id="FDIT.Core.Compras.Identificadores_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Identificadores">
+              <LayoutItem Id="CuentaEmailFacturacion" Removed="True" />
+              <LayoutItem Id="PlantillaMensajeFacturacion" Removed="True" />
+              <LayoutItem Id="TipoComprobanteOrdenPago" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Compras.ProveedorEmpresa_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ProveedorEmpresa">
+              <LayoutItem Id="Proveedor" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

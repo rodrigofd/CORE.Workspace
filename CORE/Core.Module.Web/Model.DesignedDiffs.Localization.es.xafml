@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChooseTheme" Caption="Seleccionar tema" />
+      <Action Id="Download" Caption="Descargar" />
+      <Action Id="Edit" Caption="Editar" />
+      <Action Id="Export" Caption="Exportar" />
+      <Action Id="QuickCreateAction" Caption="Creación rápida" />
+      <Action Id="ReportViewerDialogController_Close" Caption="Cerrar" />
+      <Action Id="ShowReportInPreviewWindow" Caption="Vista previa" />
+      <Action Id="SwitchToEditMode" Caption="Editar" />
+    </Actions>
+  </ActionDesign>
+  <Localization>
+    <LocalizationGroup Name="ASPxImagePropertyEditor">
+      <LocalizationItem Name="Clear" Value="Vaciar" />
+      <LocalizationItem Name="Edit" Value="Editar" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Controls">
+      <LocalizationGroup Name="ASPxCriteriaEdit">
+        <LocalizationItem Name="EnterValueText" Value="&lt;ingrese un valor&gt;" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ASPxEditors">
+        <LocalizationItem Name="Captcha_RefreshText" Value="Mostrar otro código" />
+        <LocalizationItem Name="DefaultErrorText" Value="Valor inválido" />
+        <LocalizationItem Name="FilterConrol_Empty" Value="&amp;lt;vacío&amp;gt;" />
+        <LocalizationItem Name="FilterConrol_EmptyEnter" Value="&amp;lt;ingrese un valor&amp;gt;" />
+        <LocalizationItem Name="FilterControl_AddCondition" Value="Agregar Condición" />
+        <LocalizationItem Name="FilterControl_AddConditionHint" Value="Agrega una condición a este grupo" />
+        <LocalizationItem Name="FilterControl_AddGroup" Value="Agregar grupo" />
+        <LocalizationItem Name="FilterControl_AddValueHint" Value="Agrega un item a la lista" />
+        <LocalizationItem Name="FilterControl_BetweenAnd" Value="Y" />
+        <LocalizationItem Name="FilterControl_Cancel" Value="Cancelar" />
+        <LocalizationItem Name="FilterControl_ClauseType" Value="Es igual a,Es distinto de,Es mayor a,Es mayor o igual a,Es menor a,Es menor o igual a,Está entre,No está entre,Contiene,No contiene,Comienza con,Termina con,Es similar a,No es similar a,Está vacío,No está vacío,Alguno de estos,Ninguno de estos" />
+        <LocalizationItem Name="FilterControl_ClearFilter" Value="Limpiar" />
+        <LocalizationItem Name="FilterControl_GroupType" Value="Y,O,NO Y,NO O" />
+        <LocalizationItem Name="FilterControl_Not" Value="No" />
+        <LocalizationItem Name="FilterControl_OK" Value="Aceptar" />
+        <LocalizationItem Name="FilterControl_PopupHeaderText" Value="Editor de filtros" />
+        <LocalizationItem Name="FilterControl_Remove" Value="Quitar" />
+        <LocalizationItem Name="FilterControl_RemoveConditionHint" Value="Quita esta condición" />
+        <LocalizationItem Name="FilterControl_ShowFilterControl" Value="Crear Filtro" />
+        <LocalizationItem Name="RegExValidationErrorText" Value="Falló la validación por patrón" />
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="FileAttachments">
+      <LocalizationItem Name="Editor_Clear" Value="Borrar" />
+      <LocalizationItem Name="Editor_DownLoad" Value="Descargar contenido" />
+      <LocalizationItem Name="Editor_Edit" Value="Cambiar archivo" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Messages">
+      <LocalizationItem Name="Create" Value="Crear" />
+      <LocalizationItem Name="Delete" Value="Eliminar" />
+      <LocalizationItem Name="Navigate" Value="Navigar" />
+      <LocalizationItem Name="Read" Value="Leer" />
+      <LocalizationItem Name="ThereAreNoRecordsToDisplay" Value="Sin registros" />
+    </LocalizationGroup>
+  </Localization>
+  <Views>
+    <DetailView Id="FDIT.Core.CRM.Actividad_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Actividad" Caption="Actividad">
+                <LayoutGroup Id="Actividad_col1" Caption="Actividad_col1">
+                  <LayoutGroup Id="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52" Caption="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52(7)">
+                    <LayoutGroup Id="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d" Caption="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d(8)" />
+                    <LayoutGroup Id="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76" Caption="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76(11)" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Actividad_col2" Caption="Actividad_col2">
+                  <LayoutGroup Id="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1" Caption="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1(25)" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" Caption="Datos de servicio">
+                <LayoutGroup Id="Auto8f64cc55-6b48-4dfc-a57c-4c17cc85f518" Caption="" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Contenido" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Ventas.Comprobante_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Comprobante_2" Caption="Comprobante de venta">
+                <LayoutGroup Id="Comprobante_2_col1" Caption="Comprobante_2_col1">
+                  <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050" Caption="Autob93ec7f6-7e40-4594-917f-a5716c30b050(8)">
+                    <LayoutGroup Id="Autod34eae52-d316-42d6-b911-43a6d2e8a302" Caption="Autod34eae52-d316-42d6-b911-43a6d2e8a302(23)" />
+                    <LayoutGroup Id="Autof0501646-5d9d-4541-bd8d-003416ab72b5" Caption="" />
+                    <LayoutGroup Id="Auto98d4f268-95e8-434e-9344-b30576169299" Caption="Auto98d4f268-95e8-434e-9344-b30576169299(9)" />
+                    <LayoutGroup Id="Auto68149395-6db5-414f-9d3e-03f61746d3f7" Caption="" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Comprobante_2_col2" Caption="Comprobante_2_col2" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Otros datos">
+                <LayoutGroup Id="Auto17cae93c-413d-4b04-8c14-1c862aeae4b7" Caption="Auto17cae93c-413d-4b04-8c14-1c862aeae4b7(48)" />
+                <LayoutGroup Id="Auto75bed8a6-d675-49e9-b190-96eb875c306b" Caption="Auto75bed8a6-d675-49e9-b190-96eb875c306b(51)">
+                  <LayoutGroup Id="Auto067793e9-e4e0-4a7d-af0a-d26026317f74" Caption="Auto067793e9-e4e0-4a7d-af0a-d26026317f74(53)" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Cuotas" Caption="Cuotas" />
+            <LayoutGroup Id="Items" Caption="Detalle del comprobante" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Configuración">
+        <Items>
+          <Item Id="Reports" Caption="Impresiones" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DetailView Id="FDIT.Core.CRM.Actividad_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Item3">
+                <LayoutGroup Id="Auto8f64cc55-6b48-4dfc-a57c-4c17cc85f518" Caption="Auto8f64cc55-6b48-4dfc-a57c-4c17cc85f518(26)" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Ventas.Comprobante_DetailView">
+      <Items>
+        <PropertyEditor Id="IdentificacionNro" Caption="" />
+        <PropertyEditor Id="Numero" Caption="" />
+      </Items>
+    </DetailView>
+  </Views>
+</Application>

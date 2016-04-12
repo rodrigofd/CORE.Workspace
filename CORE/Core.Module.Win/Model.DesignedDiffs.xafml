@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel>
+    <Class Name="FDIT.Core.CRM.Actividad">
+      <OwnMembers>
+        <Member Name="Contenido" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Win.HtmlPropertyEditor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FDIT.Core.Fondos.Especie">
+      <OwnMembers>
+        <Member Name="TipoValor" PropertyEditorType="FDIT.Core.Win.Editors.WinSimpleComboBoxEditor" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FDIT.Core.Sistema.PlantillaMensaje">
+      <OwnMembers>
+        <Member Name="Contenido" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Win.HtmlPropertyEditor" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <NavigationItems NavigationStyle="TreeList">
+    <Items>
+      <Item Id="Configuración">
+        <Items>
+          <Item Id="Reports" ViewId="DevExpress.Persistent.BaseImpl.ReportData_ListView" ObjectKey="" Caption="Reports" Index="9" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Options Skin="Office 2016 Colorful" FormStyle="Ribbon" DataAccessMode="Server" UIType="TabbedMDI">
+    <LayoutManagerOptions TextAlignModeItem="AutoSize" TextAlignModeGroup="AlignLocal" InvisibleGroupVerticalDistance="5" ItemToBorderHorizontalDistance="5" ItemToBorderVerticalDistance="5" ItemToItemHorizontalDistance="5" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="15.2.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="15.2.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="15.2.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="FDIT.Core.CRM.Actividad_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions" RelativeSize="34">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Actividad" ImageName="">
+                <LayoutGroup Id="Actividad_col1" RelativeSize="46" ImageName="" />
+                <LayoutGroup Id="Actividad_col2" RelativeSize="53" ImageName="">
+                  <LayoutGroup Id="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1" ImageName="">
+                    <LayoutItem Id="Estado" RelativeSize="58" />
+                    <LayoutItem Id="EstadoPorcentaje" RelativeSize="41" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" ImageName="">
+                <LayoutGroup Id="Auto8f64cc55-6b48-4dfc-a57c-4c17cc85f518" RelativeSize="22" ImageName="">
+                  <LayoutItem Id="Contrato" RelativeSize="48" />
+                  <LayoutItem Id="ContratoItem" RelativeSize="51" />
+                </LayoutGroup>
+                <LayoutItem Id="Caso" RelativeSize="63" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" TextAlignMode="UseParentOptions" RelativeSize="5">
+            <LayoutItem Id="Asunto" RelativeSize="100" />
+            <LayoutItem Id="Contenido" TextAlignMode="UseParentOptions" SizeConstraintsType="Custom" MinSize="92, 48" MaxSize="0, 0" RelativeSize="78" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.CRM.Actividad_ListView" PreviewColumnName="">
+      <Columns>
+        <ColumnInfo Id="Tipo" Width="50" />
+        <ColumnInfo Id="Direccion" Width="40" />
+        <ColumnInfo Id="Asunto" Index="3" Width="120" />
+        <ColumnInfo Id="InicioPactado" Index="4" />
+        <ColumnInfo Id="Vencimiento" Index="5" />
+        <ColumnInfo Id="Inicio" Index="6" />
+        <ColumnInfo Id="Fin" Index="7" />
+        <ColumnInfo Id="Cliente" Index="8" />
+        <ColumnInfo Id="Estado" Index="11" />
+        <ColumnInfo Id="EstadoPorcentaje" Index="12" />
+        <ColumnInfo Id="Caso" Removed="True" />
+        <ColumnInfo Id="Consumo" Removed="True" />
+        <ColumnInfo Id="Contenido" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Win.HtmlPropertyEditor" Removed="True" />
+        <ColumnInfo Id="Contrato" Removed="True" />
+        <ColumnInfo Id="ContratoItem" Removed="True" />
+        <ColumnInfo Id="DireccionBCC" Removed="True" />
+        <ColumnInfo Id="DireccionCC" Removed="True" />
+        <ColumnInfo Id="Duracion" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Ventas.Comprobante_DetailView">
+      <Items>
+        <PropertyEditor Id="Tipo" Caption="Tipo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" TextAlignMode="UseParentOptions">
+          <LayoutGroup Id="SimpleEditors" TextAlignMode="UseParentOptions" RelativeSize="61">
+            <TabbedGroup Id="Item1" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+              <LayoutGroup Id="Comprobante_2" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions">
+                <LayoutGroup Id="Comprobante_2_col1" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Direction="Vertical" RelativeSize="58">
+                  <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Direction="Vertical">
+                    <LayoutGroup Id="Auto98d4f268-95e8-434e-9344-b30576169299" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" RelativeSize="12" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Comprobante_2_col2" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Direction="Vertical" RelativeSize="41">
+                  <LayoutGroup Id="Auto486f1f31-faa3-4cbe-8fa0-46d7b23e5a44" TextAlignMode="AutoSize" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+                    <LayoutGroup Id="Autof1714723-66fd-457a-a5c0-5be3cbc36831" RelativeSize="40" ImageName="" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto5dcc6619-aa36-4474-9aff-1f0540a74370" ImageName="" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" TextAlignMode="UseParentOptions" Direction="Vertical">
+                    <LayoutGroup Id="Item4" TextAlignMode="AutoSize" ImageName="" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" Direction="Vertical" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" ImageName="">
+                <LayoutGroup Id="Auto17cae93c-413d-4b04-8c14-1c862aeae4b7" RelativeSize="12" ImageName="">
+                  <LayoutItem Id="Propio" RelativeSize="37" />
+                  <LayoutItem Id="ComprobanteRemito" RelativeSize="62" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto75bed8a6-d675-49e9-b190-96eb875c306b" ImageName="">
+                  <LayoutGroup Id="Auto067793e9-e4e0-4a7d-af0a-d26026317f74" ImageName="">
+                    <LayoutItem Id="FechaContable" RelativeSize="62" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="NotasCobranza" RelativeSize="32" />
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="28">
+            <LayoutGroup Id="Items" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Items" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+            <LayoutGroup Id="Cuotas" TextAlignMode="AlignLocal">
+              <LayoutItem Id="Cuotas" TextAlignMode="AutoSize" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

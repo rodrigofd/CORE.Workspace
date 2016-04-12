@@ -1,0 +1,1001 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems StartupNavigationItem="FDIT.Core.Personas.Persona_ListView">
+    <Items>
+      <Item Id="Seguros" Caption="Seguros" Index="2" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="FDIT.Core.Seguros.Titulo_ListView" Index="0" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Aseguradora_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Documento_ListView" Caption="Documentos" IsNewNode="True" />
+          <Item Id="FDIT.Core.Seguros.DocumentoCuotaAplicacionTipo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.DocumentoItemClase_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.DocumentoItemParentesco_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.DocumentoPilotoRol_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.DocumentoTipo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.FormaDePago_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Identificadores_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Interes_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Intermediario_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.LineaNegocio_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.LiquidacionAAseguradora_ListView" ViewId="FDIT.Core.Seguros.LiquidacionAAseguradora_ListView" ObjectKey="" Caption="Liquidaciones a aseguradoras" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.LiquidacionAIntermediario_ListView" ViewId="FDIT.Core.Seguros.LiquidacionAIntermediario_ListView" ObjectKey="" Caption="Liquidaciones a intermediarios" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.ListaDePrecios_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.PeriodicidadFacturacion_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.PlanDePago_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Poliza_ListView" Caption="Pólizas" IsNewNode="True" />
+          <Item Id="FDIT.Core.Seguros.Ramo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.RendicionDeAseguradora_ListView" ViewId="FDIT.Core.Seguros.RendicionDeAseguradora_ListView" ObjectKey="" Caption="Rendiciones a aseguradoras" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Rol_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.Siniestro_ListView" ViewId="FDIT.Core.Seguros.Siniestro_ListView" ObjectKey="" Caption="Siniestros" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.SiniestroEstado_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.SiniestroLiquidacionTipoMovimiento_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.SiniestroTipo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.SiniestroTipoDePerdida_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.TipoImporte_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.TituloTipo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.UnidadMedidaTasa_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.VehiculoColor_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.VehiculoMarca_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.VehiculoTipo_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.VehiculoUso_ListView" IsNewNode="True" Removed="True" />
+          <Item Id="FDIT.Core.Seguros.VentaTipo_ListView" IsNewNode="True" Removed="True" />
+        </Items>
+      </Item>
+      <Item Id="Configuración">
+        <Items>
+          <Item Id="Seguros" Index="10" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="Singleton_FDIT.Core.Seguros.Identificadores" ViewId="FDIT.Core.Seguros.Identificadores_ListView" ObjectKey="" Index="0" Caption="Preferencias" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Aseguradora_ListView" ViewId="FDIT.Core.Seguros.Aseguradora_ListView" ObjectKey="" Index="1" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.DocumentoTipo_ListView" ViewId="FDIT.Core.Seguros.DocumentoTipo_ListView" ObjectKey="" Index="2" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.VentaTipo_ListView" ViewId="FDIT.Core.Seguros.VentaTipo_ListView" ObjectKey="" Index="3" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.LineaNegocio_ListView" ViewId="FDIT.Core.Seguros.LineaNegocio_ListView" ObjectKey="" Index="4" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.DocumentoItemClase_ListView" ViewId="FDIT.Core.Seguros.DocumentoItemClase_ListView" ObjectKey="" Index="5" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Ramo_ListView" ViewId="FDIT.Core.Seguros.Ramo_ListView" ObjectKey="" Index="6" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Interes_ListView" ViewId="FDIT.Core.Seguros.Interes_ListView" ObjectKey="" Index="7" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.TituloTipo_ListView" ViewId="FDIT.Core.Seguros.TituloTipo_ListView" ObjectKey="" Index="8" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Titulo_ListView" Index="9" ViewId="FDIT.Core.Seguros.Titulo_ListView" ObjectKey="" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.UnidadMedidaTasa_ListView" ViewId="FDIT.Core.Seguros.UnidadMedidaTasa_ListView" ObjectKey="" Index="10" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.TipoImporte_ListView" ViewId="FDIT.Core.Seguros.TipoImporte_ListView" ObjectKey="" Index="11" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Intermediario_ListView" ViewId="FDIT.Core.Seguros.Intermediario_ListView" ObjectKey="" Index="12" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.DocumentoItemParentesco_ListView" ViewId="FDIT.Core.Seguros.DocumentoItemParentesco_ListView" ObjectKey="" Index="13" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.DocumentoPilotoRol_ListView" ViewId="FDIT.Core.Seguros.DocumentoPilotoRol_ListView" ObjectKey="" Index="14" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.Rol_ListView" ViewId="FDIT.Core.Seguros.Rol_ListView" ObjectKey="" Index="15" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.ListaDePrecios_ListView" ViewId="FDIT.Core.Seguros.ListaDePrecios_ListView" ObjectKey="" Index="16" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.PeriodicidadFacturacion_ListView" ViewId="FDIT.Core.Seguros.PeriodicidadFacturacion_ListView" ObjectKey="" Index="17" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.PlanDePago_ListView" ViewId="FDIT.Core.Seguros.PlanDePago_ListView" ObjectKey="" Index="18" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.FormaDePago_ListView" ViewId="FDIT.Core.Seguros.FormaDePago_ListView" ObjectKey="" Index="19" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.DocumentoCuotaAplicacionTipo_ListView" ViewId="FDIT.Core.Seguros.DocumentoCuotaAplicacionTipo_ListView" ObjectKey="" Index="20" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.SiniestroTipo_ListView" ViewId="FDIT.Core.Seguros.SiniestroTipo_ListView" ObjectKey="" Index="21" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.SiniestroEstado_ListView" ViewId="FDIT.Core.Seguros.SiniestroEstado_ListView" ObjectKey="" Index="22" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.SiniestroTipoDePerdida_ListView" ViewId="FDIT.Core.Seguros.SiniestroTipoDePerdida_ListView" ObjectKey="" Index="23" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.SiniestroLiquidacionTipoMovimiento_ListView" ViewId="FDIT.Core.Seguros.SiniestroLiquidacionTipoMovimiento_ListView" ObjectKey="" Index="24" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.VehiculoMarca_ListView" ViewId="FDIT.Core.Seguros.VehiculoMarca_ListView" ObjectKey="" Index="25" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.VehiculoColor_ListView" ViewId="FDIT.Core.Seguros.VehiculoColor_ListView" ObjectKey="" Index="26" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.VehiculoTipo_ListView" ViewId="FDIT.Core.Seguros.VehiculoTipo_ListView" ObjectKey="" Index="27" IsNewNode="True" />
+              <Item Id="FDIT.Core.Seguros.VehiculoUso_ListView" ViewId="FDIT.Core.Seguros.VehiculoUso_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+          <Item Id="Seguridad" Index="11" />
+          <Item Id="Sistema" Index="12" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="13.1.12.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="13.1.12.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="FDIT.Core.Seguros.Documento_DetailView">
+      <Items>
+        <PropertyEditor Id="CantidadCuotas" Caption="Cuotas" />
+        <PropertyEditor Id="ComprobanteReferencia" Caption="Referencia" />
+        <PropertyEditor Id="EmitidaFecha" Caption="Fecha emisión" />
+        <PropertyEditor Id="PedidoDeEmision" Caption="Se emite" />
+        <PropertyEditor Id="PeriodicidadFacturacion" Caption="Period. facturación" />
+        <PropertyEditor Id="PlanDePago" Caption="Plan de Pago" />
+        <PropertyEditor Id="Poliza.Aseguradora" PropertyName="Poliza.Aseguradora" Removed="True" />
+        <PropertyEditor Id="Poliza.Aseguradora.Interviniente" PropertyName="Poliza.Aseguradora.Interviniente" Caption="Aseguradora" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.LineaNegocio" PropertyName="Poliza.LineaNegocio" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Numero" PropertyName="Poliza.Numero" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Organizador.ComisionCobranza" PropertyName="Poliza.Organizador.ComisionCobranza" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Organizador.ComisionPrima" PropertyName="Poliza.Organizador.ComisionPrima" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Ramo" PropertyName="Poliza.Ramo" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Subramo" PropertyName="Poliza.Subramo" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.TipoVenta" PropertyName="Poliza.TipoVenta" IsNewNode="True" />
+        <PropertyEditor Id="Poliza.Tomador" PropertyName="Poliza.Tomador" Removed="True" />
+        <PropertyEditor Id="Poliza.Tomador.Interviniente" PropertyName="Poliza.Tomador.Interviniente" Caption="Tomador" IsNewNode="True" />
+        <PropertyEditor Id="VigenciaDiasAlVencimiento" Caption="Días a vto." />
+        <PropertyEditor Id="VigenciaFin" Caption="Hasta" />
+        <PropertyEditor Id="VigenciaInicio" Caption="Desde" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="67" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <TabbedGroup Id="Item2" CaptionLocation="Top" Index="0" RelativeSize="91" IsNewNode="True">
+              <LayoutGroup Id="Documento" ShowCaption="True" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="Documento_col1" ShowCaption="False" Index="0" RelativeSize="47" IsNewNode="True">
+                  <LayoutGroup Id="Auto0a706832-6d74-422e-8800-22ad9752e7ab" ShowCaption="False" Caption="Auto0a706832-6d74-422e-8800-22ad9752e7ab(13)" Index="0" RelativeSize="100" IsNewNode="True">
+                    <LayoutItem Id="NumeroSolicitud" ViewItem="NumeroSolicitud" SizeConstraintsType="Default" Index="0" RelativeSize="7" IsNewNode="True" />
+                    <LayoutItem Id="Poliza.Aseguradora.Interviniente" ViewItem="Poliza.Aseguradora.Interviniente" SizeConstraintsType="Default" Index="1" RelativeSize="5" IsNewNode="True" />
+                    <LayoutItem Id="Poliza.Tomador.Interviniente" ViewItem="Poliza.Tomador.Interviniente" SizeConstraintsType="Default" Index="2" RelativeSize="5" IsNewNode="True" />
+                    <LayoutGroup Id="Auto02ca06a4-beb9-447f-b28b-9305b698d01d" ShowCaption="False" Caption="Auto02ca06a4-beb9-447f-b28b-9305b698d01d(10)" Direction="Horizontal" Index="3" RelativeSize="7" IsNewNode="True">
+                      <LayoutItem Id="Tipo" ViewItem="Tipo" SizeConstraintsType="Default" Index="0" RelativeSize="47" IsNewNode="True" />
+                      <LayoutItem Id="PedidoDeEmision" ViewItem="PedidoDeEmision" SizeConstraintsType="Default" Index="1" RelativeSize="52" ShowCaption="True" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autof66c5e1e-7fd2-409d-a232-8c6dde882482" ShowCaption="False" Caption="Autof66c5e1e-7fd2-409d-a232-8c6dde882482(13)" Index="4" RelativeSize="65" IsNewNode="True">
+                      <LayoutGroup Id="Auto6988c933-90a0-4d13-9a44-062f6167816e" ShowCaption="False" Caption="Auto6988c933-90a0-4d13-9a44-062f6167816e(14)" Direction="Vertical" Index="0" RelativeSize="12" IsNewNode="True">
+                        <LayoutItem Id="ProductorEnPoliza" ViewItem="ProductorEnPoliza" SizeConstraintsType="Default" Index="0" RelativeSize="100" ShowCaption="True" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto14ecb1bb-fc27-420f-b6dc-e16af14f5810" ShowCaption="False" Caption="Auto14ecb1bb-fc27-420f-b6dc-e16af14f5810(17)" Index="1" RelativeSize="87" IsNewNode="True">
+                        <LayoutGroup Id="Autoe32b9eee-a91c-449d-bfd7-4c52790fc16a" ShowCaption="False" Caption="Autoe32b9eee-a91c-449d-bfd7-4c52790fc16a(18)" Direction="Horizontal" Index="0" RelativeSize="13" IsNewNode="True">
+                          <LayoutItem Id="Poliza.TipoVenta" ViewItem="Poliza.TipoVenta" SizeConstraintsType="Default" Index="0" RelativeSize="47" IsNewNode="True" />
+                          <LayoutItem Id="Poliza.LineaNegocio" ViewItem="Poliza.LineaNegocio" SizeConstraintsType="Default" Index="1" RelativeSize="52" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Autoc60cf7b4-be41-4a0b-b5a2-e32ecafd317b" ShowCaption="False" Caption="Autoc60cf7b4-be41-4a0b-b5a2-e32ecafd317b(21)" Index="1" RelativeSize="86" IsNewNode="True">
+                          <LayoutItem Id="Ramo" ViewItem="Ramo" SizeConstraintsType="Default" Index="0" RelativeSize="13" IsNewNode="True" />
+                          <LayoutItem Id="Subramo" ViewItem="Subramo" SizeConstraintsType="Default" Index="1" RelativeSize="11" IsNewNode="True" />
+                          <LayoutGroup Id="Item1" ShowCaption="True" Caption="Vigencia" CaptionLocation="Top" Index="2" RelativeSize="31" IsNewNode="True">
+                            <LayoutGroup Id="Auto11ce9708-6207-40d8-8172-f661aed3c2cd" ShowCaption="False" Caption="Auto11ce9708-6207-40d8-8172-f661aed3c2cd(31)" Direction="Horizontal" Index="0" RelativeSize="61" IsNewNode="True">
+                              <LayoutItem Id="VigenciaInicio" ViewItem="VigenciaInicio" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                              <LayoutItem Id="VigenciaFin" ViewItem="VigenciaFin" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                            </LayoutGroup>
+                          </LayoutGroup>
+                          <LayoutItem Id="EmitidaFecha" ViewItem="EmitidaFecha" SizeConstraintsType="Default" Index="3" RelativeSize="11" IsNewNode="True" />
+                          <LayoutGroup Id="Auto5f924c0b-ffe9-4a0d-9a86-04f27efaafec" ShowCaption="False" Caption="Auto5f924c0b-ffe9-4a0d-9a86-04f27efaafec(29)" Direction="Horizontal" Index="4" RelativeSize="16" IsNewNode="True">
+                            <LayoutItem Id="Poliza.Numero" ViewItem="Poliza.Numero" SizeConstraintsType="Default" Index="0" RelativeSize="48" IsNewNode="True" />
+                            <LayoutItem Id="NumeroEndoso" ViewItem="NumeroEndoso" SizeConstraintsType="Default" Index="1" RelativeSize="51" IsNewNode="True" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto4296d41b-a0fa-42e2-985a-a7ea84d01fc2" ShowCaption="False" Caption="Auto4296d41b-a0fa-42e2-985a-a7ea84d01fc2(30)" Direction="Horizontal" Index="5" RelativeSize="16" IsNewNode="True">
+                            <LayoutItem Id="Poliza.Moneda" ViewItem="Poliza.Moneda" SizeConstraintsType="Default" Index="0" RelativeSize="47" IsNewNode="True" />
+                            <LayoutItem Id="Poliza.Cambio" ViewItem="Poliza.Cambio" SizeConstraintsType="Default" Index="1" RelativeSize="52" IsNewNode="True" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                    <LayoutItem Id="Estado" ViewItem="Estado" SizeConstraintsType="Default" Index="5" RelativeSize="7" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Documento_col2" ShowCaption="False" Index="1" RelativeSize="52" IsNewNode="True">
+                  <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="70" Caption="Importes" IsNewNode="True">
+                    <LayoutItem Id="Importes" ViewItem="Importes" SizeConstraintsType="Default" Index="0" RelativeSize="88" ShowCaption="False" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autoe3c4f6ce-b76a-42b1-a8c3-dedd72d15589" ShowCaption="False" Caption="Autoe3c4f6ce-b76a-42b1-a8c3-dedd72d15589(40)" Index="1" RelativeSize="29" IsNewNode="True">
+                    <LayoutGroup Id="Autoddd68455-f86d-457a-8d25-7509772c3baa" ShowCaption="False" Caption="Autoddd68455-f86d-457a-8d25-7509772c3baa(44)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutGroup Id="Autodf3c2191-43b0-490d-bacf-980ae9bbabee" ShowCaption="False" Caption="Autodf3c2191-43b0-490d-bacf-980ae9bbabee(39)" Direction="Horizontal" Index="0" RelativeSize="29" IsNewNode="True">
+                        <LayoutItem Id="Poliza.Organizador.ComisionPrima" ViewItem="Poliza.Organizador.ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="44" IsNewNode="True" />
+                        <LayoutItem Id="Poliza.Organizador.ComisionCobranza" ViewItem="Poliza.Organizador.ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="55" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutItem Id="PlanDePago" ViewItem="PlanDePago" SizeConstraintsType="Default" Index="1" RelativeSize="19" IsNewNode="True" />
+                      <LayoutGroup Id="Autodbdc0720-3e5f-43f5-b9f2-c24be7c65ac4" ShowCaption="False" Caption="Autodbdc0720-3e5f-43f5-b9f2-c24be7c65ac4(46)" Direction="Horizontal" Index="2" RelativeSize="50" IsNewNode="True">
+                        <LayoutGroup Id="Auto55e6a0d8-d353-407d-b14f-3357530e0bda" ShowCaption="False" Caption="Auto55e6a0d8-d353-407d-b14f-3357530e0bda(47)" Index="0" RelativeSize="44" IsNewNode="True">
+                          <LayoutItem Id="PeriodicidadFacturacion" ViewItem="PeriodicidadFacturacion" SizeConstraintsType="Default" Index="0" RelativeSize="48" IsNewNode="True" />
+                          <LayoutItem Id="ComprobanteReferencia" ViewItem="ComprobanteReferencia" SizeConstraintsType="Default" Index="1" RelativeSize="51" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Auto4884b2a8-69f0-4b94-87d5-ab6f3b2f87ca" ShowCaption="False" Caption="Auto4884b2a8-69f0-4b94-87d5-ab6f3b2f87ca(50)" Index="1" RelativeSize="55" IsNewNode="True">
+                          <LayoutItem Id="CantidadCuotas" ViewItem="CantidadCuotas" SizeConstraintsType="Default" Index="0" RelativeSize="48" IsNewNode="True" />
+                          <LayoutItem Id="Comprobante" ViewItem="Comprobante" SizeConstraintsType="Default" Index="1" RelativeSize="51" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Items" ShowCaption="True" Index="1" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Items" ShowCaption="False" ViewItem="Items" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Intervinientes" ShowCaption="True" Index="2" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Intervinientes" ShowCaption="False" ViewItem="Intervinientes" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Cuotas" ShowCaption="True" Index="3" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Cuotas" ShowCaption="False" ViewItem="Cuotas" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Planes" ShowCaption="True" Index="4" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Planes" ShowCaption="False" ViewItem="Planes" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Siniestros" ShowCaption="True" Index="5" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Siniestros" ShowCaption="False" SizeConstraintsType="Default" Index="0" RelativeSize="100" ViewItem="" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Anotaciones" ShowCaption="True" Index="6" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Anotaciones" ShowCaption="False" ViewItem="Anotaciones" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="ArchivosAsociados" ShowCaption="True" Caption="Archivos Asociados" Index="7" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="ArchivosAsociados" ShowCaption="False" ViewItem="ArchivosAsociados" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Vinculos" ShowCaption="True" Index="8" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="Vinculos" ShowCaption="False" ViewItem="Vinculos" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="AuditTrail" ShowCaption="True" Caption="Audit Trail" Index="9" RelativeSize="100" IsNewNode="True">
+                <LayoutItem Id="AuditTrail" ShowCaption="False" ViewItem="AuditTrail" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutItem Id="NotaAseguradora" ViewItem="NotaAseguradora" SizeConstraintsType="Default" Index="1" RelativeSize="8" CaptionLocation="Top" IsNewNode="True" />
+            <LayoutGroup Id="Documento" RelativeSize="100" ImageName="" Removed="True">
+              <LayoutGroup Id="Documento_col1" RelativeSize="59" ImageName="">
+                <LayoutItem Id="Aseguradora" SizeConstraintsType="Default" RelativeSize="4" Index="2" />
+                <LayoutItem Id="NumeroDocumentoProductor" SizeConstraintsType="Default" RelativeSize="4" Index="2" Removed="True" />
+                <LayoutItem Id="NumeroEmpresaPoliza" SizeConstraintsType="Default" RelativeSize="2" Index="2" Removed="True" />
+                <LayoutItem Id="NumeroEmpresaPolizaRenueva" SizeConstraintsType="Default" RelativeSize="2" Index="2" Removed="True" />
+                <LayoutItem Id="Tomador" SizeConstraintsType="Default" RelativeSize="4" Index="3" />
+                <LayoutGroup Id="Autocc41370c-d78b-484e-8249-b5f498ef7323" ShowCaption="False" Caption="" Direction="Horizontal" Index="4" RelativeSize="4" IsNewNode="True">
+                  <LayoutItem Id="Productor" ViewItem="Productor" SizeConstraintsType="Default" Index="0" RelativeSize="60" IsNewNode="True" />
+                  <LayoutItem Id="ProductorEnPoliza" ViewItem="ProductorEnPoliza" SizeConstraintsType="Default" Index="1" RelativeSize="39" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto487c6ccb-72b1-4f46-ad71-c5bd3774ff05" ShowCaption="False" Caption="" Index="5" RelativeSize="69" IsNewNode="True">
+                  <LayoutItem Id="Tipo" ViewItem="Tipo" SizeConstraintsType="Default" Index="0" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="Estado" ViewItem="Estado" SizeConstraintsType="Default" Index="1" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="PedidoDeEmision" ViewItem="PedidoDeEmision" SizeConstraintsType="Default" Index="2" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="TipoVenta" ViewItem="TipoVenta" SizeConstraintsType="Default" Index="3" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="LineaNegocio" ViewItem="LineaNegocio" SizeConstraintsType="Default" Index="4" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="Ramo" ViewItem="Ramo" SizeConstraintsType="Default" Index="5" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="Subramo" ViewItem="Subramo" SizeConstraintsType="Default" Index="6" RelativeSize="6" IsNewNode="True" />
+                  <LayoutItem Id="EmitidaFecha" ViewItem="EmitidaFecha" SizeConstraintsType="Default" Index="7" RelativeSize="6" IsNewNode="True" />
+                  <LayoutGroup Id="Autob2d581c7-b354-475c-af8a-aa0e8d6e2943" ShowCaption="False" Caption="" Direction="Horizontal" Index="8" RelativeSize="6" IsNewNode="True">
+                    <LayoutItem Id="PolizaNro" ViewItem="PolizaNro" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                    <LayoutItem Id="PolizaDv" ViewItem="PolizaDv" SizeConstraintsType="Default" Index="1" RelativeSize="49" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto9e125b73-3d55-4961-b68a-92ceb834dcef" ShowCaption="False" Caption="" Index="9" RelativeSize="41" IsNewNode="True">
+                    <LayoutGroup Id="Auto595ce031-505b-4884-a1db-5d69802ed087" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="15" IsNewNode="True">
+                      <LayoutItem Id="EndosoNro" ViewItem="EndosoNro" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="EndosoDv" ViewItem="EndosoDv" SizeConstraintsType="Default" Index="1" RelativeSize="49" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto59f5e88c-529b-4306-88fa-1bae2658533f" ShowCaption="False" Caption="" Index="1" RelativeSize="84" IsNewNode="True">
+                      <LayoutGroup Id="Auto4ed7ecde-0432-476e-a987-72f860f5f3bb" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="18" IsNewNode="True">
+                        <LayoutItem Id="VigenciaInicio" ViewItem="VigenciaInicio" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutItem Id="VigenciaFin" ViewItem="VigenciaFin" SizeConstraintsType="Default" Index="1" RelativeSize="49" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto149c6ff5-416b-4b43-b442-8dc649de76bf" ShowCaption="False" Caption="" Index="1" RelativeSize="81" IsNewNode="True">
+                        <LayoutItem Id="VigenciaFinPoliza" ViewItem="VigenciaFinPoliza" SizeConstraintsType="Default" Index="0" RelativeSize="22" IsNewNode="True" />
+                        <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Direction="Horizontal" Index="1" RelativeSize="33" IsNewNode="True">
+                          <LayoutItem Id="VigenciaDias" ViewItem="VigenciaDias" SizeConstraintsType="Default" Index="0" RelativeSize="33" IsNewNode="True" />
+                          <LayoutItem Id="VigenciaMeses" ViewItem="VigenciaMeses" SizeConstraintsType="Default" Index="1" RelativeSize="33" IsNewNode="True" />
+                          <LayoutItem Id="VigenciaDiasAlVencimiento" ViewItem="VigenciaDiasAlVencimiento" SizeConstraintsType="Default" Index="2" RelativeSize="33" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutItem Id="Vigente" ViewItem="Vigente" SizeConstraintsType="Default" Index="2" RelativeSize="22" IsNewNode="True" />
+                        <LayoutGroup Id="Autoe4b594b7-6ef6-4a86-a427-ed77f0766de7" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="22" IsNewNode="True">
+                          <LayoutItem Id="Especie" ViewItem="Especie" SizeConstraintsType="Default" Index="0" RelativeSize="40" IsNewNode="True" />
+                          <LayoutItem Id="Cambio" ViewItem="Cambio" SizeConstraintsType="Default" Index="1" RelativeSize="60" IsNewNode="True" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Productor" SizeConstraintsType="Default" RelativeSize="4" Index="5" Removed="True" />
+                <LayoutItem Id="SumaAsegurada" SizeConstraintsType="Default" Index="6" RelativeSize="6" />
+                <LayoutItem Id="Tipo" SizeConstraintsType="Default" RelativeSize="4" Index="6" Removed="True" />
+                <LayoutItem Id="Estado" SizeConstraintsType="Default" RelativeSize="4" Index="7" Removed="True" />
+                <LayoutItem Id="PedidoDeEmision" SizeConstraintsType="Default" RelativeSize="4" Index="8" Removed="True" />
+                <LayoutItem Id="TipoVenta" SizeConstraintsType="Default" RelativeSize="4" Index="9" Removed="True" />
+                <LayoutItem Id="LineaNegocio" SizeConstraintsType="Default" RelativeSize="4" Index="10" Removed="True" />
+                <LayoutItem Id="Subclase" SizeConstraintsType="Default" RelativeSize="2" Index="10" Removed="True" />
+                <LayoutItem Id="Ramo" SizeConstraintsType="Default" RelativeSize="4" Index="11" Removed="True" />
+                <LayoutItem Id="Subramo" SizeConstraintsType="Default" RelativeSize="4" Index="12" Removed="True" />
+                <LayoutItem Id="EmitidaFecha" SizeConstraintsType="Default" RelativeSize="4" Index="13" Removed="True" />
+                <LayoutItem Id="EndosoNro" SizeConstraintsType="Default" RelativeSize="2" Index="21" Removed="True" />
+                <LayoutItem Id="EndosoDv" SizeConstraintsType="Default" RelativeSize="2" Index="22" Removed="True" />
+                <LayoutItem Id="Endoso" SizeConstraintsType="Default" RelativeSize="2" Index="23" Removed="True" />
+                <LayoutItem Id="Cambio" Removed="True" />
+                <LayoutItem Id="Clase" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="Especie" Removed="True" />
+                <LayoutItem Id="NumeroEmpresa" SizeConstraintsType="Default" RelativeSize="6" />
+                <LayoutItem Id="NumeroEmpresaNegocio" SizeConstraintsType="Default" RelativeSize="4" />
+                <LayoutItem Id="NumeroEmpresaPolizaPiloto" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="Poliza" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="PolizaDv" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="PolizaNro" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaDias" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaDiasAlVencimiento" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaFin" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaFinPoliza" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaInicio" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="VigenciaMeses" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="Vigente" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Documento_col2" RelativeSize="38" ImageName="">
+                <LayoutGroup Id="Auto0a962843-20d7-48c7-a4ea-77162c38daff" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="6" IsNewNode="True">
+                  <LayoutItem Id="TasaDeRiesgo" ViewItem="TasaDeRiesgo" SizeConstraintsType="Default" Index="0" RelativeSize="58" IsNewNode="True" />
+                  <LayoutItem Id="UnidadMedidaTasaRiesgo" ShowCaption="False" ViewItem="UnidadMedidaTasaRiesgo" SizeConstraintsType="Default" Index="1" RelativeSize="41" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto4ebf785c-da36-4fa0-a592-96314480b2cb" ShowCaption="False" Caption="" Index="1" RelativeSize="45" IsNewNode="True">
+                  <LayoutItem Id="PrimaGravada" ViewItem="PrimaGravada" SizeConstraintsType="Default" Index="0" RelativeSize="10" IsNewNode="True" />
+                  <LayoutGroup Id="Auto2b915707-f9f8-443d-95eb-429a74366432" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="10" IsNewNode="True">
+                    <LayoutItem Id="GastoGravado1Tasa" ViewItem="GastoGravado1Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                    <LayoutItem Id="GastoGravado1" ViewItem="GastoGravado1" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autod6a7e04a-b63b-4c8a-8f18-5edada07c381" ShowCaption="False" Caption="" Index="2" RelativeSize="80" IsNewNode="True">
+                    <LayoutGroup Id="Autoe3c6e39d-5881-4cd9-8bca-7cb3e9441d70" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="12" IsNewNode="True">
+                      <LayoutItem Id="GastoGravado2Tasa" ViewItem="GastoGravado2Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                      <LayoutItem Id="GastoGravado2" ViewItem="GastoGravado2" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto7f1c7b20-d4da-4d4b-a509-83d3867119b4" ShowCaption="False" Caption="" Index="1" RelativeSize="87" IsNewNode="True">
+                      <LayoutGroup Id="Autoa770a327-abf4-4e3c-955c-a077b8563dff" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="14" IsNewNode="True">
+                        <LayoutItem Id="GastoGravado3Tasa" ViewItem="GastoGravado3Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                        <LayoutItem Id="GastoGravado3" ViewItem="GastoGravado3" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto61c80759-f835-45cb-b521-977ae8d2e599" ShowCaption="False" Caption="" Index="1" RelativeSize="85" IsNewNode="True">
+                        <LayoutItem Id="Impuestos1" ViewItem="Impuestos1" SizeConstraintsType="Default" Index="0" RelativeSize="16" IsNewNode="True" />
+                        <LayoutGroup Id="Autod74a4099-17f7-4629-a9cf-d0620f191a52" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="16" IsNewNode="True">
+                          <LayoutItem Id="Iva1Tasa" ViewItem="Iva1Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                          <LayoutItem Id="Iva1" ViewItem="Iva1" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Autoca5fafc1-7b7e-4d54-81e4-c421645ef866" ShowCaption="False" Caption="" Index="2" RelativeSize="66" IsNewNode="True">
+                          <LayoutItem Id="PrimaNoGravada" ViewItem="PrimaNoGravada" SizeConstraintsType="Default" Index="0" RelativeSize="25" IsNewNode="True" />
+                          <LayoutItem Id="Premio" ViewItem="Premio" SizeConstraintsType="Default" Index="1" RelativeSize="25" IsNewNode="True" />
+                          <LayoutGroup Id="Auto531a18a7-586a-4bc4-bb8e-751ae6e7c60c" ShowCaption="False" Caption="" Direction="Horizontal" Index="2" RelativeSize="50" IsNewNode="True">
+                            <LayoutGroup Id="Auto59da29b0-54d4-42ec-902d-b6049fe8148a" ShowCaption="False" Caption="" Index="0" RelativeSize="49" IsNewNode="True">
+                              <LayoutItem Id="ComisionPrimaTasa" ViewItem="ComisionPrimaTasa" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                              <LayoutItem Id="ComisionCobranzaTasa" ViewItem="ComisionCobranzaTasa" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                            </LayoutGroup>
+                            <LayoutGroup Id="Autodc5a353d-5c2d-4cfe-9214-26f8f232c8b3" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                              <LayoutItem Id="ComisionPrima" ViewItem="ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                              <LayoutItem Id="ComisionCobranza" ViewItem="ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="PrimaGravada" SizeConstraintsType="Default" RelativeSize="2" Index="1" Removed="True" />
+                <LayoutItem Id="ComisionCobranzaTasa" SizeConstraintsType="Default" RelativeSize="3" Index="2" Removed="True" />
+                <LayoutItem Id="GastoGravado1Tasa" SizeConstraintsType="Default" RelativeSize="2" Index="2" Removed="True" />
+                <LayoutItem Id="GastoGravado2Tasa" SizeConstraintsType="Default" RelativeSize="2" Index="2" Removed="True" />
+                <LayoutItem Id="GastoGravado3Tasa" SizeConstraintsType="Default" RelativeSize="3" Index="2" Removed="True" />
+                <LayoutItem Id="Impuestos1" SizeConstraintsType="Default" RelativeSize="3" Index="2" Removed="True" />
+                <LayoutItem Id="LugarDePago" SizeConstraintsType="Default" RelativeSize="4" Index="2" />
+                <LayoutItem Id="PrimaNoGravada" SizeConstraintsType="Default" RelativeSize="3" Index="2" Removed="True" />
+                <LayoutItem Id="Renueva" SizeConstraintsType="Default" RelativeSize="4" Index="2" Removed="True" />
+                <LayoutItem Id="ComisionCobranza" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="ComprobanteDebCred" SizeConstraintsType="Default" RelativeSize="4" Index="3" Removed="True" />
+                <LayoutItem Id="GastoGravado1" SizeConstraintsType="Default" RelativeSize="2" Index="3" Removed="True" />
+                <LayoutItem Id="GastoGravado2" SizeConstraintsType="Default" RelativeSize="2" Index="3" Removed="True" />
+                <LayoutItem Id="GastoGravado3" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="Gastos" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="Impuestos" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="Iva1Tasa" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="PeriodicidadFacturacion" SizeConstraintsType="Default" RelativeSize="4" Index="3" />
+                <LayoutItem Id="Premio" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="Prima" SizeConstraintsType="Default" RelativeSize="3" Index="3" Removed="True" />
+                <LayoutItem Id="CantidadCuotas" SizeConstraintsType="Default" RelativeSize="4" Index="4" />
+                <LayoutItem Id="ComisionPrimaTasa" SizeConstraintsType="Default" RelativeSize="3" Index="4" Removed="True" />
+                <LayoutItem Id="Iva1" SizeConstraintsType="Default" RelativeSize="3" Index="4" Removed="True" />
+                <LayoutItem Id="PrimaSobrePremioIndice" SizeConstraintsType="Default" RelativeSize="3" Index="4" Removed="True" />
+                <LayoutItem Id="ComisionPrima" SizeConstraintsType="Default" RelativeSize="3" Index="5" Removed="True" />
+                <LayoutItem Id="ComprobanteReferencia" SizeConstraintsType="Default" RelativeSize="4" Index="5" />
+                <LayoutItem Id="Comprobante" SizeConstraintsType="Default" RelativeSize="4" Index="6" />
+                <LayoutItem Id="PlanDePago" SizeConstraintsType="Default" RelativeSize="4" Index="7" />
+                <LayoutItem Id="PagoAnticipoTasa" SizeConstraintsType="Default" RelativeSize="4" Index="8" />
+                <LayoutItem Id="PagoDescuentoTasa" SizeConstraintsType="Default" RelativeSize="4" Index="9" />
+                <LayoutItem Id="PagoDescuentoImporte" SizeConstraintsType="Default" RelativeSize="4" Index="10" />
+                <LayoutItem Id="ProductorEnPoliza" SizeConstraintsType="Default" RelativeSize="4" Index="11" Removed="True" />
+                <LayoutItem Id="RolPiloto" SizeConstraintsType="Default" RelativeSize="8" Index="11" />
+                <LayoutItem Id="TasaDeRiesgo" SizeConstraintsType="Default" RelativeSize="2" Removed="True" />
+                <LayoutItem Id="UnidadMedidaTasaRiesgo" SizeConstraintsType="Default" RelativeSize="3" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="32" ImageName="" Caption="SizeableEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutItem Id="NotaInterna" SizeConstraintsType="Default" RelativeSize="17" Index="0" CaptionLocation="Top" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            <LayoutGroup Id="Auto9bda051f-a0a5-4ac2-bf22-6b248135f122" ShowCaption="False" Caption="Auto9bda051f-a0a5-4ac2-bf22-6b248135f122(82)" Direction="Horizontal" Index="1" RelativeSize="14" IsNewNode="True">
+              <LayoutItem Id="Poliza.Renueva" ViewItem="Poliza.Renueva" SizeConstraintsType="Default" Index="0" RelativeSize="22" ShowCaption="True" IsNewNode="True" />
+              <LayoutItem Id="Poliza.RenuevaMotivo" ViewItem="Poliza.RenuevaMotivo" SizeConstraintsType="Default" Index="1" RelativeSize="77" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutItem Id="Poliza.RenuevaMotivo" SizeConstraintsType="Default" Index="1" RelativeSize="7" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" Removed="True" />
+            <LayoutItem Id="NotaTomador" SizeConstraintsType="Default" RelativeSize="68" Index="2" CaptionLocation="Top" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            <LayoutItem Id="NotaAseguradora" SizeConstraintsType="Default" RelativeSize="12" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="13" Removed="True">
+            <LayoutGroup Id="Anotaciones" RelativeSize="100" ImageName="sticky-note-pin" Index="0" Removed="True">
+              <LayoutItem Id="Anotaciones" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="ArchivosAsociados" RelativeSize="100" ImageName="attach" Index="0" Removed="True">
+              <LayoutItem Id="ArchivosAsociados" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="AuditTrail" RelativeSize="100" ImageName="BO_Audit_ChangeHistory" Index="0">
+              <LayoutItem Id="AuditTrail" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Cuotas" RelativeSize="100" ImageName="" Index="0" Removed="True">
+              <LayoutItem Id="Cuotas" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Intervinientes" RelativeSize="100" ImageName="" Index="0" Removed="True">
+              <LayoutItem Id="Intervinientes" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Planes" RelativeSize="100" ImageName="" Index="0" Removed="True">
+              <LayoutItem Id="Planes" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Siniestros" RelativeSize="100" ImageName="" Index="0" Removed="True">
+              <LayoutItem Id="Siniestros" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Vinculos" RelativeSize="100" ImageName="link" Index="0" Removed="True">
+              <LayoutItem Id="Vinculos" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Items" RelativeSize="100" ImageName="" Removed="True">
+              <LayoutItem Id="Items" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Seguros.Documento_Importes_ListView" NewItemRowPosition="Top" AllowEdit="True" />
+    <ListView Id="FDIT.Core.Seguros.Documento_Intervinientes_ListView" AllowEdit="True" NewItemRowPosition="Top">
+      <Columns>
+        <ColumnInfo Id="PolizaInterviniente" Index="-1" />
+        <ColumnInfo Id="TipoMovimiento" Index="0" Width="40" />
+        <ColumnInfo Id="Rol" Index="1" Width="50" />
+        <ColumnInfo Id="Principal" Index="2" />
+        <ColumnInfo Id="Interviniente" Index="3" />
+        <ColumnInfo Id="Participacion" Index="4" />
+        <ColumnInfo Id="Identificacion" Index="5" />
+        <ColumnInfo Id="Direccion" Index="6" />
+        <ColumnInfo Id="Contacto" Index="7" />
+        <ColumnInfo Id="CategoriaImpuestos" Index="8" />
+        <ColumnInfo Id="ComisionPrima" Index="9" />
+      </Columns>
+    </ListView>
+    <ListView Id="FDIT.Core.Seguros.Documento_ListView">
+      <Columns>
+        <ColumnInfo Id="FormaDePago" Index="-1" />
+        <ColumnInfo Id="NumeroSolicitudProductor" Index="-1" />
+        <ColumnInfo Id="PedidoDeEmision" Index="-1" Removed="True" />
+        <ColumnInfo Id="NumeroSolicitud" Width="10" />
+        <ColumnInfo Id="Tipo" Index="2" Width="30" />
+        <ColumnInfo Id="Poliza.NumeroSolicitud" Index="3" Removed="True" />
+        <ColumnInfo Id="Poliza.Numero" Index="4" />
+        <ColumnInfo Id="NumeroEndoso" Index="5" />
+        <ColumnInfo Id="Poliza.Carpeta" Index="6" Removed="True" />
+        <ColumnInfo Id="Poliza.PolizaRenovada" Index="7" Removed="True" />
+        <ColumnInfo Id="Poliza.PolizaPiloto" Index="8" Removed="True" />
+        <ColumnInfo Id="Poliza.RolPiloto" Index="9" Removed="True" />
+        <ColumnInfo Id="Poliza.TipoVenta" Index="10" Removed="True" />
+        <ColumnInfo Id="Poliza.Aseguradora" Index="11" PropertyName="Poliza.Aseguradora.Interviniente" Caption="Aseguradora" />
+        <ColumnInfo Id="Poliza.Tomador" Index="12" PropertyName="Poliza.Tomador.Interviniente" Caption="Tomador" />
+        <ColumnInfo Id="Vigente" Index="14" />
+        <ColumnInfo Id="Estado" Index="15" />
+        <ColumnInfo Id="Poliza.LineaNegocio" Index="16" />
+        <ColumnInfo Id="Poliza.Ramo" Index="17" />
+        <ColumnInfo Id="EmitidaFecha" Index="18" Removed="True" />
+        <ColumnInfo Id="Poliza.Subramo" Index="18" />
+        <ColumnInfo Id="VigenciaInicio" Index="19" />
+        <ColumnInfo Id="VigenciaFin" Index="20" />
+        <ColumnInfo Id="Poliza.VigenciaInicio" Index="21" Removed="True" />
+        <ColumnInfo Id="Poliza.VigenciaFin" Index="22" Removed="True" />
+        <ColumnInfo Id="VigenciaDias" Index="25" Removed="True" />
+        <ColumnInfo Id="VigenciaMeses" Index="26" Removed="True" />
+        <ColumnInfo Id="VigenciaDiasAlVencimiento" Index="27" Removed="True" />
+        <ColumnInfo Id="PeriodicidadFacturacion" Index="54" Removed="True" />
+        <ColumnInfo Id="CantidadCuotas" Index="55" Removed="True" />
+        <ColumnInfo Id="ComprobanteReferencia" Index="56" Removed="True" />
+        <ColumnInfo Id="Comprobante" Index="57" Removed="True" />
+        <ColumnInfo Id="PlanDePago" Index="58" Removed="True" />
+        <ColumnInfo Id="ProductorEnPoliza" Index="62" Removed="True" />
+        <ColumnInfo Id="Aseguradora" Removed="True" />
+        <ColumnInfo Id="NotaAseguradora" Removed="True" />
+        <ColumnInfo Id="NotaInterna" Removed="True" />
+        <ColumnInfo Id="NotaTomador" Removed="True" />
+        <ColumnInfo Id="Poliza.Cambio" Removed="True" />
+        <ColumnInfo Id="Poliza.Organizador" Removed="True" />
+        <ColumnInfo Id="Poliza.Renueva" Removed="True" />
+        <ColumnInfo Id="Poliza.SumaAsegurada" Removed="True" />
+        <ColumnInfo Id="Poliza.VigenciaDias" Removed="True" />
+        <ColumnInfo Id="Poliza.VigenciaDiasAlVencimiento" Removed="True" />
+        <ColumnInfo Id="Poliza.VigenciaMeses" Removed="True" />
+        <ColumnInfo Id="Ramo" Removed="True" />
+        <ColumnInfo Id="Subramo" Removed="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoInterviniente_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="30" ImageName="" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutGroup Id="DocumentoIntervinienteBase_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Auto5c8f92e1-6777-4c6e-bc7c-c20637780dc2" ShowCaption="False" Caption="Auto5c8f92e1-6777-4c6e-bc7c-c20637780dc2(4)" Direction="Horizontal" Index="0" RelativeSize="15" IsNewNode="True">
+                <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="48" IsNewNode="True" />
+                <LayoutItem Id="PolizaInterviniente" ViewItem="PolizaInterviniente" SizeConstraintsType="Default" Index="1" RelativeSize="51" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Autoef3c252e-455e-46df-b6e3-a8f104aac81a" ShowCaption="False" Caption="Autoef3c252e-455e-46df-b6e3-a8f104aac81a(7)" Index="1" RelativeSize="84" IsNewNode="True">
+                <LayoutGroup Id="Autofa7f49e3-8894-472d-aab5-133a317217bb" ShowCaption="False" Caption="Autofa7f49e3-8894-472d-aab5-133a317217bb(8)" Direction="Horizontal" Index="0" RelativeSize="17" IsNewNode="True">
+                  <LayoutItem Id="Rol" ViewItem="Rol" SizeConstraintsType="Default" Index="0" RelativeSize="32" IsNewNode="True" />
+                  <LayoutItem Id="Principal" ViewItem="Principal" SizeConstraintsType="Default" Index="1" RelativeSize="32" ShowCaption="False" IsNewNode="True" />
+                  <LayoutItem Id="Participacion" ViewItem="Participacion" SizeConstraintsType="Default" Index="2" RelativeSize="35" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto9629104d-58d6-4b77-99c4-ee5491105ea5" ShowCaption="False" Caption="Auto9629104d-58d6-4b77-99c4-ee5491105ea5(12)" Index="1" RelativeSize="82" IsNewNode="True">
+                  <LayoutItem Id="Interviniente" ViewItem="Interviniente" SizeConstraintsType="Default" Index="0" RelativeSize="16" IsNewNode="True" />
+                  <LayoutItem Id="Identificacion" ViewItem="Identificacion" SizeConstraintsType="Default" Index="1" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="Direccion" ViewItem="Direccion" SizeConstraintsType="Default" Index="2" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="CategoriaImpuestos" ViewItem="CategoriaImpuestos" SizeConstraintsType="Default" Index="3" RelativeSize="15" IsNewNode="True" />
+                  <LayoutItem Id="Contacto" ViewItem="Contacto" SizeConstraintsType="Default" Index="4" RelativeSize="15" IsNewNode="True" />
+                  <LayoutGroup Id="Auto6bf29714-ab3d-4c9c-9c54-3e8d02064b82" ShowCaption="False" Caption="Auto6bf29714-ab3d-4c9c-9c54-3e8d02064b82(18)" Direction="Horizontal" Index="5" RelativeSize="22" IsNewNode="True">
+                    <LayoutItem Id="ComisionPrima" ViewItem="ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="48" IsNewNode="True" />
+                    <LayoutItem Id="ComisionCobranza" ViewItem="ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="51" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoInterviniente" RelativeSize="17" ImageName="" Direction="Horizontal" Caption="Poliza Interviniente" Removed="True">
+              <LayoutItem Id="PolizaInterviniente" Removed="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoIntervinienteBase" RelativeSize="99" ImageName="" Direction="Vertical" Removed="True">
+              <LayoutGroup Id="DocumentoIntervinienteBase_col1" RelativeSize="84" ImageName="">
+                <LayoutGroup Id="Autofa3899e5-43d9-4b39-9528-8e82f1e637e9" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="15" IsNewNode="True">
+                  <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                  <LayoutItem Id="PolizaInterviniente" ViewItem="PolizaInterviniente" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="15" Removed="True" />
+                <LayoutGroup Id="Autoa555993f-a28b-4933-b608-3289770b8f98" ShowCaption="False" Caption="" Index="1" RelativeSize="84" IsNewNode="True">
+                  <LayoutGroup Id="Auto5d1a7139-b0b2-495f-bcac-74da13522157" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="13" IsNewNode="True">
+                    <LayoutItem Id="Rol" ViewItem="Rol" SizeConstraintsType="Default" Index="0" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="Principal" ViewItem="Principal" SizeConstraintsType="Default" Index="1" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="Participacion" ViewItem="Participacion" SizeConstraintsType="Default" Index="2" RelativeSize="33" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto110c2c26-3f16-4620-860e-ca61e404d014" ShowCaption="False" Caption="" Index="1" RelativeSize="86" IsNewNode="True">
+                    <LayoutItem Id="Interviniente" ViewItem="Interviniente" SizeConstraintsType="Default" Index="0" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="Identificacion" ViewItem="Identificacion" SizeConstraintsType="Default" Index="1" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="Direccion" ViewItem="Direccion" SizeConstraintsType="Default" Index="2" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="CategoriaImpuestos" ViewItem="CategoriaImpuestos" SizeConstraintsType="Default" Index="3" RelativeSize="15" IsNewNode="True" />
+                    <LayoutItem Id="Contacto" ViewItem="Contacto" SizeConstraintsType="Default" Index="4" RelativeSize="15" IsNewNode="True" />
+                    <LayoutGroup Id="Autocfc1811d-60b8-4584-9804-9c3418c36ed2" ShowCaption="False" Caption="" Direction="Horizontal" Index="5" RelativeSize="21" IsNewNode="True">
+                      <LayoutItem Id="ComisionPrima" ViewItem="ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                      <LayoutItem Id="ComisionCobranza" ViewItem="ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Rol" SizeConstraintsType="Default" Index="1" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="Participacion" SizeConstraintsType="Default" Index="2" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="Principal" SizeConstraintsType="Default" Index="2" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="ComisionPrima" SizeConstraintsType="Default" Index="4" RelativeSize="23" Removed="True" />
+                <LayoutItem Id="Descripcion" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoIntervinienteBase_col2" RelativeSize="37" ImageName="" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="CategoriaImpuestos" Removed="True" />
+                <LayoutItem Id="ComisionCobranza" Removed="True" />
+                <LayoutItem Id="Contacto" Removed="True" />
+                <LayoutItem Id="Direccion" Removed="True" />
+                <LayoutItem Id="Identificacion" Removed="True" />
+                <LayoutItem Id="Interviniente" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoIntervinienteItem_DetailView">
+      <Items>
+        <PropertyEditor Id="PolizaIntervinienteItem" Caption="Interviniente afectado" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="26" ImageName="">
+            <LayoutGroup Id="DocumentoIntervinienteBase_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+              <LayoutGroup Id="Autoa9962641-c9ab-4386-959c-d36314d33740" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="14" IsNewNode="True">
+                <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="47" IsNewNode="True" />
+                <LayoutItem Id="PolizaIntervinienteItem" ViewItem="PolizaIntervinienteItem" SizeConstraintsType="Default" Index="1" RelativeSize="52" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Autod5a931eb-d373-4096-b797-2645a2ccc466" ShowCaption="False" Caption="" Index="1" RelativeSize="85" IsNewNode="True">
+                <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="19" IsNewNode="True">
+                  <LayoutItem Id="Rol" ViewItem="Rol" SizeConstraintsType="Default" Index="0" RelativeSize="32" IsNewNode="True" />
+                  <LayoutItem Id="Principal" ShowCaption="False" ViewItem="Principal" SizeConstraintsType="Default" Index="1" RelativeSize="31" IsNewNode="True" />
+                  <LayoutItem Id="Participacion" ViewItem="Participacion" SizeConstraintsType="Default" Index="2" RelativeSize="35" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="Interviniente" ViewItem="Interviniente" SizeConstraintsType="Default" Index="1" RelativeSize="12" IsNewNode="True" />
+                <LayoutItem Id="Identificacion" ViewItem="Identificacion" SizeConstraintsType="Default" Index="2" RelativeSize="12" IsNewNode="True" />
+                <LayoutItem Id="Direccion" ViewItem="Direccion" SizeConstraintsType="Default" Index="3" RelativeSize="12" IsNewNode="True" />
+                <LayoutItem Id="CategoriaImpuestos" ViewItem="CategoriaImpuestos" SizeConstraintsType="Default" Index="4" RelativeSize="12" IsNewNode="True" />
+                <LayoutItem Id="Contacto" ViewItem="Contacto" SizeConstraintsType="Default" Index="5" RelativeSize="12" IsNewNode="True" />
+                <LayoutGroup Id="Auto6da83bc3-eb23-4b81-982c-219f76700b9d" ShowCaption="False" Caption="" Direction="Horizontal" Index="6" RelativeSize="16" IsNewNode="True">
+                  <LayoutItem Id="ComisionPrima" ViewItem="ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                  <LayoutItem Id="ComisionCobranza" ViewItem="ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoIntervinienteBase" RelativeSize="99" ImageName="" Direction="Vertical" Removed="True">
+              <LayoutGroup Id="DocumentoIntervinienteBase_col1" RelativeSize="84" ImageName="" Direction="Vertical">
+                <LayoutGroup Id="Auto416200a5-c74e-42dc-8010-ff904e6e504c" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="14" IsNewNode="True">
+                  <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                  <LayoutItem Id="PolizaIntervinienteItem" ViewItem="PolizaIntervinienteItem" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="20" Removed="True" />
+                <LayoutGroup Id="Autoc3bb8c91-c6b3-48a4-8023-c14c7196a170" ShowCaption="False" Caption="" Index="1" RelativeSize="85" IsNewNode="True">
+                  <LayoutGroup Id="Item1" ShowCaption="False" CaptionLocation="Top" Direction="Horizontal" Index="0" RelativeSize="19" IsNewNode="True">
+                    <LayoutItem Id="Rol" ViewItem="Rol" SizeConstraintsType="Default" Index="0" RelativeSize="32" IsNewNode="True" />
+                    <LayoutItem Id="Principal" ViewItem="Principal" SizeConstraintsType="Default" Index="1" RelativeSize="31" IsNewNode="True" />
+                    <LayoutItem Id="Participacion" ViewItem="Participacion" SizeConstraintsType="Default" Index="2" RelativeSize="35" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutItem Id="Interviniente" ViewItem="Interviniente" SizeConstraintsType="Default" Index="1" RelativeSize="12" IsNewNode="True" />
+                  <LayoutItem Id="Identificacion" ViewItem="Identificacion" SizeConstraintsType="Default" Index="2" RelativeSize="12" IsNewNode="True" />
+                  <LayoutItem Id="Direccion" ViewItem="Direccion" SizeConstraintsType="Default" Index="3" RelativeSize="12" IsNewNode="True" />
+                  <LayoutItem Id="CategoriaImpuestos" ViewItem="CategoriaImpuestos" SizeConstraintsType="Default" Index="4" RelativeSize="12" IsNewNode="True" />
+                  <LayoutItem Id="Contacto" ViewItem="Contacto" SizeConstraintsType="Default" Index="5" RelativeSize="12" IsNewNode="True" />
+                  <LayoutGroup Id="Autoa41be62f-7f06-4807-b659-eb402015a192" ShowCaption="False" Caption="" Direction="Horizontal" Index="6" RelativeSize="17" IsNewNode="True">
+                    <LayoutItem Id="ComisionPrima" ViewItem="ComisionPrima" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                    <LayoutItem Id="ComisionCobranza" ViewItem="ComisionCobranza" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Rol" SizeConstraintsType="Default" Index="1" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="Principal" SizeConstraintsType="Default" Index="2" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="Participacion" SizeConstraintsType="Default" Index="3" RelativeSize="15" Removed="True" />
+                <LayoutItem Id="ComisionPrima" SizeConstraintsType="Default" Index="4" RelativeSize="35" Removed="True" />
+                <LayoutItem Id="Descripcion" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoIntervinienteBase_col2" RelativeSize="29" ImageName="" Caption="DocumentoIntervinienteBase_col2" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="CategoriaImpuestos" Removed="True" />
+                <LayoutItem Id="ComisionCobranza" Removed="True" />
+                <LayoutItem Id="Contacto" Removed="True" />
+                <LayoutItem Id="Direccion" Removed="True" />
+                <LayoutItem Id="Identificacion" Removed="True" />
+                <LayoutItem Id="Interviniente" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoIntervinienteItem" RelativeSize="16" ImageName="" Direction="Horizontal" Caption="Poliza Interviniente Item" Removed="True">
+              <LayoutItem Id="PolizaIntervinienteItem" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoItem_DetailView">
+      <Items>
+        <PropertyEditor Id="NumeroAseguradora" Caption="Nro. aseg." />
+        <PropertyEditor Id="PolizaItem" Caption="Item afectado" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="" Caption="Main" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="38" ImageName="" Direction="Horizontal" Caption="SimpleEditors" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <TabbedGroup Id="Item1" CaptionLocation="Top" Index="0" RelativeSize="78" IsNewNode="True">
+              <LayoutGroup Id="DocumentoItem" ShowCaption="True" Caption="Item asegurado" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True">
+                <LayoutGroup Id="DocumentoItem_col1" ShowCaption="False" Index="0" RelativeSize="100" IsNewNode="True">
+                  <LayoutGroup Id="Auto9745cbcd-61c9-4280-93dc-24ffe1970078" ShowCaption="False" Caption="Auto9745cbcd-61c9-4280-93dc-24ffe1970078(6)" Direction="Vertical" Index="0" RelativeSize="22" IsNewNode="True">
+                    <LayoutGroup Id="Auto1af963ac-0ca9-45fa-ab2f-8b33960aec70" ShowCaption="False" Caption="Auto1af963ac-0ca9-45fa-ab2f-8b33960aec70(7)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                      <LayoutGroup Id="Autoa958a2b4-225e-4806-a595-6c6a78178a43" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                        <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                        <LayoutItem Id="Plan" ViewItem="Plan" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto61f6ce21-c59b-4b9a-9308-1cb69498e839" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                        <LayoutItem Id="PolizaItem" ViewItem="PolizaItem" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                        <LayoutItem Id="NumeroAseguradora" ViewItem="NumeroAseguradora" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem Id="MateriaAsegurada" ViewItem="MateriaAsegurada" SizeConstraintsType="Default" Index="1" RelativeSize="77" CaptionLocation="Top" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="1" RelativeSize="100" Caption="Ubicación del riesgo" IsNewNode="True">
+                <LayoutGroup Id="Auto9f781055-0625-4342-8fc6-5cd1e804e088" ShowCaption="False" Caption="Auto9f781055-0625-4342-8fc6-5cd1e804e088(15)" Direction="Vertical" Index="0" RelativeSize="12" IsNewNode="True">
+                  <LayoutItem Id="Ubicacion.Calle" ViewItem="Ubicacion.Calle" SizeConstraintsType="Default" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autoe6374597-f230-45ab-9459-fa1b891b5be2" ShowCaption="False" Caption="Autoe6374597-f230-45ab-9459-fa1b891b5be2(18)" Index="1" RelativeSize="70" IsNewNode="True">
+                  <LayoutItem Id="Ubicacion.EntreCalles" ViewItem="Ubicacion.EntreCalles" SizeConstraintsType="Default" Index="0" RelativeSize="13" IsNewNode="True" />
+                  <LayoutGroup Id="Auto765686e9-1910-430a-84ea-1abe9ef0825e" ShowCaption="False" Caption="Auto765686e9-1910-430a-84ea-1abe9ef0825e(20)" Direction="Vertical" Index="1" RelativeSize="86" IsNewNode="True">
+                    <LayoutGroup Id="Auto21469886-b44e-4a69-8141-7371c13998ae" ShowCaption="False" Caption="Auto21469886-b44e-4a69-8141-7371c13998ae(21)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutGroup Id="Auto8f1cd426-509e-48ab-9703-989a1a9781a2" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="17" IsNewNode="True">
+                        <LayoutItem Id="Ubicacion.Numero" ViewItem="Ubicacion.Numero" SizeConstraintsType="Default" Index="0" RelativeSize="25" IsNewNode="True" />
+                        <LayoutItem Id="Ubicacion.Piso" ViewItem="Ubicacion.Piso" SizeConstraintsType="Default" Index="1" RelativeSize="24" IsNewNode="True" />
+                        <LayoutItem Id="Ubicacion.Edificio" ViewItem="Ubicacion.Edificio" SizeConstraintsType="Default" Index="2" RelativeSize="24" IsNewNode="True" />
+                        <LayoutItem Id="Ubicacion.Depto" ViewItem="Ubicacion.Depto" SizeConstraintsType="Default" Index="3" RelativeSize="25" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto18ead69f-dd65-40fb-822c-c8bf5e43ceba" ShowCaption="False" Caption="" Index="1" RelativeSize="82" IsNewNode="True">
+                        <LayoutGroup Id="Auto061c9411-4270-4140-a740-de6b89de77eb" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="17" IsNewNode="True">
+                          <LayoutItem Id="Ubicacion.Pais" ViewItem="Ubicacion.Pais" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                          <LayoutItem Id="Ubicacion.PaisOtro" ShowCaption="False" ViewItem="Ubicacion.PaisOtro" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                        </LayoutGroup>
+                        <LayoutGroup Id="Autoddcfe06e-470f-406d-90ec-98a709670d40" ShowCaption="False" Caption="" Index="1" RelativeSize="82" IsNewNode="True">
+                          <LayoutGroup Id="Auto2c815db6-af21-44d2-b9a0-777f4d1d409c" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="21" IsNewNode="True">
+                            <LayoutItem Id="Ubicacion.Provincia" ViewItem="Ubicacion.Provincia" SizeConstraintsType="Default" Index="0" RelativeSize="51" IsNewNode="True" />
+                            <LayoutItem Id="Ubicacion.ProvinciaOtra" ShowCaption="False" ViewItem="Ubicacion.ProvinciaOtra" SizeConstraintsType="Default" Index="1" RelativeSize="48" IsNewNode="True" />
+                          </LayoutGroup>
+                          <LayoutGroup Id="Auto4f421364-6b43-4834-822a-4efcd34fa6ad" ShowCaption="False" Caption="" Index="1" RelativeSize="78" IsNewNode="True">
+                            <LayoutGroup Id="Autodd5f5645-d527-49c6-8b89-69869a3d4824" ShowCaption="False" Caption="Autodd5f5645-d527-49c6-8b89-69869a3d4824(25)" Direction="Horizontal" Index="0" RelativeSize="40" IsNewNode="True">
+                              <LayoutItem Id="Ubicacion.Localidad" ViewItem="Ubicacion.Localidad" SizeConstraintsType="Default" Index="0" RelativeSize="31" IsNewNode="True" />
+                              <LayoutItem Id="Ubicacion.LocalidadOtra" ShowCaption="False" ViewItem="Ubicacion.LocalidadOtra" SizeConstraintsType="Default" Index="1" RelativeSize="43" IsNewNode="True" />
+                              <LayoutItem Id="Ubicacion.CodigoPostal" ViewItem="Ubicacion.CodigoPostal" SizeConstraintsType="Default" Index="2" RelativeSize="25" IsNewNode="True" />
+                            </LayoutGroup>
+                            <LayoutGroup Id="Autod7b5dc71-b317-402c-a77f-5078898fb02b" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="60" IsNewNode="True">
+                              <LayoutGroup Id="Auto0c87f28f-737d-4c29-9ab6-b231ee1025b2" ShowCaption="False" Caption="" Index="0" RelativeSize="51" IsNewNode="True">
+                                <LayoutItem Id="Ubicacion.Ciudad" ViewItem="Ubicacion.Ciudad" SizeConstraintsType="Default" Index="0" RelativeSize="44" IsNewNode="True" />
+                                <LayoutItem Id="Ubicacion.Telefono" ViewItem="Ubicacion.Telefono" SizeConstraintsType="Default" Index="1" RelativeSize="55" IsNewNode="True" />
+                              </LayoutGroup>
+                              <LayoutGroup Id="Auto230308d5-c81b-406f-b39c-b5df60338306" ShowCaption="False" Caption="" Index="1" RelativeSize="48" IsNewNode="True">
+                                <LayoutItem Id="Ubicacion.CiudadOtra" ShowCaption="False" ViewItem="Ubicacion.CiudadOtra" SizeConstraintsType="Default" Index="0" RelativeSize="44" IsNewNode="True" />
+                                <LayoutItem Id="Ubicacion.Fax" ViewItem="Ubicacion.Fax" SizeConstraintsType="Default" Index="1" RelativeSize="55" IsNewNode="True" />
+                              </LayoutGroup>
+                            </LayoutGroup>
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="Ubicacion.Notas" ViewItem="Ubicacion.Notas" SizeConstraintsType="Default" Index="2" RelativeSize="17" CaptionLocation="Top" IsNewNode="True" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="Importes" ShowCaption="True" Index="1" RelativeSize="21" IsNewNode="True">
+              <LayoutItem Id="Importes" ShowCaption="False" ViewItem="Importes" SizeConstraintsType="Default" Index="0" RelativeSize="87" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoItem" RelativeSize="100" ImageName="" Removed="True">
+              <LayoutGroup Id="DocumentoItem_col1" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Auto07a231af-1d74-4f6b-b486-079630fd0ad8" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="30" IsNewNode="True">
+                  <LayoutGroup Id="Auto17d69e0b-b76a-4f80-bafa-95f4fc88c417" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="TipoMovimiento" ViewItem="TipoMovimiento" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                    <LayoutItem Id="Plan" ViewItem="Plan" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto5d334f3f-588d-4fe6-9749-4fbb6c071122" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="PolizaItem" ViewItem="PolizaItem" SizeConstraintsType="Default" Index="0" RelativeSize="57" IsNewNode="True" />
+                    <LayoutItem Id="NumeroAseguradora" ViewItem="NumeroAseguradora" SizeConstraintsType="Default" Index="1" RelativeSize="42" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="PolizaItem" SizeConstraintsType="Default" Index="0" RelativeSize="17" Removed="True" />
+                <LayoutItem Id="Plan" SizeConstraintsType="Default" Index="1" RelativeSize="13" Removed="True" />
+                <LayoutItem Id="TipoMovimiento" SizeConstraintsType="Default" Index="1" RelativeSize="13" Removed="True" />
+                <LayoutItem Id="Ubicacion.Numero" SizeConstraintsType="Default" Index="1" RelativeSize="13" />
+                <LayoutItem Id="NumeroAseguradora" SizeConstraintsType="Default" Index="2" RelativeSize="13" Removed="True" />
+                <LayoutItem Id="Ubicacion.Edificio" SizeConstraintsType="Default" Index="2" RelativeSize="56" />
+                <LayoutItem Id="Descripcion" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItem_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="Ubicacion.Ciudad" SizeConstraintsType="Default" RelativeSize="13" />
+                <LayoutItem Id="Ubicacion.CodigoPostal" SizeConstraintsType="Default" RelativeSize="13" />
+                <LayoutItem Id="Ubicacion.Depto" SizeConstraintsType="Default" RelativeSize="13" />
+                <LayoutItem Id="Ubicacion.Localidad" SizeConstraintsType="Default" RelativeSize="13" />
+                <LayoutItem Id="Ubicacion.Pais" SizeConstraintsType="Default" RelativeSize="17" />
+                <LayoutItem Id="Ubicacion.Piso" SizeConstraintsType="Default" RelativeSize="17" />
+                <LayoutItem Id="Ubicacion.Provincia" SizeConstraintsType="Default" RelativeSize="13" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="61" Index="1" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+            <LayoutGroup Id="Intervinientes" RelativeSize="100" ImageName="" Index="0" Caption="Intervinientes" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+              <LayoutItem Id="Intervinientes" SizeConstraintsType="Default" RelativeSize="100" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            </LayoutGroup>
+            <LayoutGroup Id="Detalles" RelativeSize="100" ImageName="" Index="1" Caption="Detalles" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+              <LayoutItem Id="Detalles" SizeConstraintsType="Default" RelativeSize="100" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            </LayoutGroup>
+            <LayoutGroup Id="Siniestros" RelativeSize="100" ImageName="" Index="2" Caption="Siniestros" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default">
+              <LayoutItem Id="Siniestros" SizeConstraintsType="Default" RelativeSize="100" CaptionLocation="Default" CaptionWordWrap="Default" CaptionHorizontalAlignment="Default" CaptionVerticalAlignment="Default" />
+            </LayoutGroup>
+            <LayoutGroup Id="Importes" RelativeSize="100" ImageName="" Removed="True">
+              <LayoutItem Id="Importes" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="5" ImageName="" Caption="SizeableEditors" Direction="Horizontal" Removed="True">
+            <LayoutItem Id="MateriaAsegurada" Removed="True" />
+            <LayoutItem Id="Ubicacion.Calle" Removed="True" />
+            <LayoutItem Id="Ubicacion.CiudadOtra" Removed="True" />
+            <LayoutItem Id="Ubicacion.EntreCalles" Removed="True" />
+            <LayoutItem Id="Ubicacion.Fax" Removed="True" />
+            <LayoutItem Id="Ubicacion.LocalidadOtra" Removed="True" />
+            <LayoutItem Id="Ubicacion.Notas" Removed="True" />
+            <LayoutItem Id="Ubicacion.PaisOtro" Removed="True" />
+            <LayoutItem Id="Ubicacion.ProvinciaOtra" Removed="True" />
+            <LayoutItem Id="Ubicacion.Telefono" Removed="True" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Seguros.DocumentoItem_Intervinientes_ListView">
+      <Columns>
+        <ColumnInfo Id="PolizaIntervinienteItem" Index="-1" />
+        <ColumnInfo Id="TipoMovimiento" Index="0" />
+        <ColumnInfo Id="Rol" Index="1" />
+        <ColumnInfo Id="Principal" Index="2" />
+        <ColumnInfo Id="Interviniente" Index="3" />
+        <ColumnInfo Id="Participacion" Index="4" />
+        <ColumnInfo Id="Identificacion" Index="5" />
+        <ColumnInfo Id="Direccion" Index="6" />
+        <ColumnInfo Id="Contacto" Index="7" />
+        <ColumnInfo Id="CategoriaImpuestos" Index="8" />
+        <ColumnInfo Id="ComisionPrima" Index="9" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoItemPersonal_DetailView">
+      <Items>
+        <PropertyEditor Id="VidaAfiliacionSegSocial" Caption="Afiliación Seg Social" />
+        <PropertyEditor Id="VidaIdentificacion" Caption="Identificación" />
+        <PropertyEditor Id="VidaIdentificacionTipo" Caption="Tipo de identificación" />
+        <PropertyEditor Id="VidaItemVinculado" Caption="Item Vinculado" />
+        <PropertyEditor Id="VidaNacimientoFecha" Caption="Fecha de nacimiento" />
+        <PropertyEditor Id="VidaNombre" Caption="Nombre completo" />
+        <PropertyEditor Id="VidaParentesco" Caption="Parentesco" />
+        <PropertyEditor Id="VidaSexo" Caption="Sexo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="35" ImageName="">
+            <LayoutGroup Id="DocumentoItemPersonal" Caption="Datos del individuo" RelativeSize="42" ImageName="">
+              <LayoutGroup Id="DocumentoItemPersonal_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="VidaNombre" ViewItem="VidaNombre" SizeConstraintsType="Default" Index="0" RelativeSize="36" IsNewNode="True" />
+                <LayoutGroup Id="Autod6e8d9d4-d3e8-4e46-9912-b8cc6f8afa3a" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="63" IsNewNode="True">
+                  <LayoutGroup Id="Autod071042b-f694-4294-9103-e4d3b4d56d73" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="VidaIdentificacionTipo" ViewItem="VidaIdentificacionTipo" SizeConstraintsType="Default" Index="0" RelativeSize="42" IsNewNode="True" />
+                    <LayoutItem Id="VidaSexo" ViewItem="VidaSexo" SizeConstraintsType="Default" Index="1" RelativeSize="57" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto56a45b97-be56-4d95-b598-79e977db1cb1" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="VidaIdentificacion" ViewItem="VidaIdentificacion" SizeConstraintsType="Default" Index="0" RelativeSize="42" IsNewNode="True" />
+                    <LayoutItem Id="VidaNacimientoFecha" ViewItem="VidaNacimientoFecha" SizeConstraintsType="Default" Index="1" RelativeSize="57" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="VidaSexo" ViewItem="VidaSexo" SizeConstraintsType="Default" Index="2" RelativeSize="21" Removed="True" />
+                <LayoutItem Id="VidaNacimientoFecha" SizeConstraintsType="Default" RelativeSize="28" Index="3" Removed="True" />
+                <LayoutItem Id="VidaIdentificacionTipo" SizeConstraintsType="Default" RelativeSize="36" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItemPersonal_col2" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Autof89700dc-44f9-4418-a934-5b80e882827e" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="36" IsNewNode="True">
+                  <LayoutItem Id="VidaItemVinculado" ViewItem="VidaItemVinculado" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                  <LayoutItem Id="VidaParentesco" ViewItem="VidaParentesco" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutItem Id="VidaAfiliacionSegSocial" SizeConstraintsType="Default" RelativeSize="63" Index="1" />
+                <LayoutItem Id="VidaItemVinculado" SizeConstraintsType="Default" RelativeSize="27" Removed="True" />
+                <LayoutItem Id="VidaParentesco" SizeConstraintsType="Default" RelativeSize="36" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoItem" RelativeSize="57" ImageName="">
+              <LayoutGroup Id="DocumentoItem_col1" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Auto8991e571-5e42-4fbd-a2b3-dcebd4275ed6" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="23" IsNewNode="True">
+                  <LayoutItem Id="Tipo" ViewItem="Tipo" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="NumeroItem" ViewItem="NumeroItem" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autof41c1aec-4b80-48ea-884c-84c877a59a34" ShowCaption="False" Caption="" Index="1" RelativeSize="76" IsNewNode="True">
+                  <LayoutItem Id="NumeroItemAseguradora" ViewItem="NumeroItemAseguradora" SizeConstraintsType="Default" Index="0" RelativeSize="23" IsNewNode="True" />
+                  <LayoutGroup Id="Auto6f73368b-3ff8-4e97-97ab-aa18a68f705c" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="76" IsNewNode="True">
+                    <LayoutGroup Id="Autoe0824a68-4651-4125-ae46-b651d6cec61f" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="Cantidad" ViewItem="Cantidad" SizeConstraintsType="Default" Index="0" RelativeSize="30" IsNewNode="True" />
+                      <LayoutItem Id="Plan" ViewItem="Plan" SizeConstraintsType="Default" Index="1" RelativeSize="70" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto8db730c2-48e6-4946-8605-48551a05a3af" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="Clase" ViewItem="Clase" SizeConstraintsType="Default" Index="0" RelativeSize="30" IsNewNode="True" />
+                      <LayoutItem Id="TipoPrecio" ViewItem="TipoPrecio" SizeConstraintsType="Default" Index="1" RelativeSize="70" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItem_col2" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Autodadbcd09-7684-4251-8bc7-92e5ed20e94f" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="17" IsNewNode="True">
+                  <LayoutItem Id="Iva1Tasa" ViewItem="Iva1Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                  <LayoutItem Id="Iva1" ShowCaption="False" ViewItem="Iva1" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="27" ImageName="">
+            <LayoutItem Id="MateriaAsegurada" SizeConstraintsType="Default" RelativeSize="12" Index="0" />
+            <LayoutItem Id="DetallaCoberturas" ViewItem="DetallaCoberturas" SizeConstraintsType="Default" Index="2" RelativeSize="10" IsNewNode="True" />
+            <LayoutItem Id="VidaIdentificacion" SizeConstraintsType="Default" RelativeSize="9" Removed="True" />
+            <LayoutItem Id="VidaNombre" SizeConstraintsType="Default" RelativeSize="12" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="37">
+            <LayoutGroup Id="Intervinientes" RelativeSize="100" ImageName="">
+              <LayoutItem Id="Intervinientes" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Siniestros" RelativeSize="100" ImageName="">
+              <LayoutItem Id="Siniestros" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoItemVehiculo_DetailView">
+      <Items>
+        <PropertyEditor Id="CodigoBaseDatos" Caption="Cód. base datos" />
+        <PropertyEditor Id="Vehiculo0Km" Caption="0 Km?" />
+        <PropertyEditor Id="VehiculoAño" Caption="Año" />
+        <PropertyEditor Id="VehiculoCaracteristicas" Caption="Características" />
+        <PropertyEditor Id="VehiculoChasis" Caption="Chasis" />
+        <PropertyEditor Id="VehiculoColor" Caption="Color" />
+        <PropertyEditor Id="VehiculoMarca" Caption="Marca" />
+        <PropertyEditor Id="VehiculoMarcaOtra" Caption="Otra" />
+        <PropertyEditor Id="VehiculoModelo" Caption="Modelo" />
+        <PropertyEditor Id="VehiculoModeloOtro" Caption="Otro" />
+        <PropertyEditor Id="VehiculoMotor" Caption="Motor" />
+        <PropertyEditor Id="VehiculoPatente" Caption="Patente" />
+        <PropertyEditor Id="VehiculoTipo" Caption="Tipo" />
+        <PropertyEditor Id="VehiculoUso" Caption="Uso" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100" ImageName="">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="47" ImageName="">
+            <LayoutGroup Id="DocumentoItemVehiculo" RelativeSize="56" ImageName="" Caption="Datos del vehículo">
+              <LayoutGroup Id="DocumentoItemVehiculo_col1" RelativeSize="48" ImageName="">
+                <LayoutItem Id="VehiculoTipo" SizeConstraintsType="Default" RelativeSize="17" />
+                <LayoutGroup Id="Auto78569c4f-5149-4da5-af1d-35737c3ab6e8" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="39" IsNewNode="True">
+                  <LayoutGroup Id="Auto067c4ebd-a635-48e4-9b72-66cbc0cc5177" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="VehiculoMarca" ViewItem="VehiculoMarca" SizeConstraintsType="Default" Index="0" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="VehiculoModelo" ViewItem="VehiculoModelo" SizeConstraintsType="Default" Index="1" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="VehiculoAño" ViewItem="VehiculoAño" SizeConstraintsType="Default" Index="2" RelativeSize="33" IsNewNode="True" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto6198852d-6859-4963-989d-d47a7f6d146f" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                    <LayoutItem Id="VehiculoMarcaOtra" ViewItem="VehiculoMarcaOtra" SizeConstraintsType="Default" Index="0" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="VehiculoModeloOtro" ViewItem="VehiculoModeloOtro" SizeConstraintsType="Default" Index="1" RelativeSize="33" IsNewNode="True" />
+                    <LayoutItem Id="Vehiculo0Km" ViewItem="Vehiculo0Km" SizeConstraintsType="Default" Index="2" RelativeSize="33" IsNewNode="True" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutItem Id="VehiculoAño" SizeConstraintsType="Default" RelativeSize="13" Index="2" Removed="True" />
+                <LayoutItem Id="VehiculoPatente" ViewItem="VehiculoPatente" SizeConstraintsType="Default" Index="2" RelativeSize="13" IsNewNode="True" />
+                <LayoutItem Id="VehiculoMotor" ViewItem="VehiculoMotor" SizeConstraintsType="Default" Index="3" RelativeSize="13" IsNewNode="True" />
+                <LayoutItem Id="VehiculoChasis" ViewItem="VehiculoChasis" SizeConstraintsType="Default" Index="4" RelativeSize="17" IsNewNode="True" />
+                <LayoutItem Id="VehiculoMarca" SizeConstraintsType="Default" RelativeSize="13" Removed="True" />
+                <LayoutItem Id="VehiculoModelo" SizeConstraintsType="Default" RelativeSize="13" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItemVehiculo_col2" RelativeSize="48" ImageName="">
+                <LayoutItem Id="VehiculoColor" SizeConstraintsType="Default" RelativeSize="17" Index="0" />
+                <LayoutItem Id="VehiculoUso" SizeConstraintsType="Default" RelativeSize="13" Index="1" />
+                <LayoutItem Id="CodigoBaseDatos" SizeConstraintsType="Default" RelativeSize="13" Index="2" />
+                <LayoutItem Id="VehiculoCaracteristicas" ViewItem="VehiculoCaracteristicas" SizeConstraintsType="Default" Index="3" RelativeSize="56" CaptionLocation="Top" IsNewNode="True" />
+                <LayoutItem Id="Vehiculo0Km" SizeConstraintsType="Default" RelativeSize="17" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="DocumentoItem" RelativeSize="43" ImageName="" Caption="Item de documento">
+              <LayoutGroup Id="DocumentoItem_col1" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Auto42f7b420-3144-41f4-8ca3-b4fd090a26e1" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="23" IsNewNode="True">
+                  <LayoutItem Id="Tipo" ViewItem="Tipo" SizeConstraintsType="Default" Index="0" RelativeSize="50" IsNewNode="True" />
+                  <LayoutItem Id="NumeroItem" ViewItem="NumeroItem" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto373dbf2c-a60f-4c61-9afe-8b97a5716df8" ShowCaption="False" Caption="" Index="1" RelativeSize="76" IsNewNode="True">
+                  <LayoutItem Id="NumeroItemAseguradora" ViewItem="NumeroItemAseguradora" SizeConstraintsType="Default" Index="0" RelativeSize="23" IsNewNode="True" />
+                  <LayoutGroup Id="Auto51355e58-9ab3-4a1e-82e9-23b164c52e83" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="76" IsNewNode="True">
+                    <LayoutGroup Id="Auto562ffc31-e284-4195-b78f-809bf306096f" ShowCaption="False" Caption="" Index="0" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="Cantidad" ViewItem="Cantidad" SizeConstraintsType="Default" Index="0" RelativeSize="30" IsNewNode="True" />
+                      <LayoutItem Id="Plan" ViewItem="Plan" SizeConstraintsType="Default" Index="1" RelativeSize="70" IsNewNode="True" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autof5b47f60-2b11-4457-a726-9cac30d7ee82" ShowCaption="False" Caption="" Index="1" RelativeSize="50" IsNewNode="True">
+                      <LayoutItem Id="Clase" ViewItem="Clase" SizeConstraintsType="Default" Index="0" RelativeSize="30" IsNewNode="True" />
+                      <LayoutItem Id="TipoPrecio" ViewItem="TipoPrecio" SizeConstraintsType="Default" Index="1" RelativeSize="70" IsNewNode="True" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItem_col2" RelativeSize="48" ImageName="">
+                <LayoutGroup Id="Autobe5a9216-2ec5-4e46-bdf9-115d5d82c662" ShowCaption="False" Caption="" Direction="Horizontal" Index="3" RelativeSize="17" IsNewNode="True">
+                  <LayoutItem Id="Iva1Tasa" ViewItem="Iva1Tasa" SizeConstraintsType="Default" Index="0" RelativeSize="49" IsNewNode="True" />
+                  <LayoutItem Id="Iva1" ShowCaption="False" ViewItem="Iva1" SizeConstraintsType="Default" Index="1" RelativeSize="50" IsNewNode="True" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" RelativeSize="27" ImageName="">
+            <LayoutItem Id="MateriaAsegurada" SizeConstraintsType="Default" RelativeSize="12" Index="0" />
+            <LayoutItem Id="VehiculoModeloOtro" SizeConstraintsType="Default" RelativeSize="12" Index="0" Removed="True" />
+            <LayoutItem Id="DetallaCoberturas" ViewItem="DetallaCoberturas" SizeConstraintsType="Default" Index="2" RelativeSize="10" IsNewNode="True" />
+            <LayoutItem Id="VehiculoCaracteristicas" SizeConstraintsType="Default" RelativeSize="8" Index="2" Removed="True" />
+            <LayoutItem Id="VehiculoChasis" SizeConstraintsType="Default" RelativeSize="8" Index="2" Removed="True" />
+            <LayoutItem Id="VehiculoMotor" SizeConstraintsType="Default" RelativeSize="7" Index="2" Removed="True" />
+            <LayoutItem Id="VehiculoMarcaOtra" SizeConstraintsType="Default" RelativeSize="10" Removed="True" />
+            <LayoutItem Id="VehiculoPatente" SizeConstraintsType="Default" RelativeSize="6" Removed="True" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="25">
+            <LayoutGroup Id="Intervinientes" RelativeSize="100" ImageName="">
+              <LayoutItem Id="Intervinientes" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Siniestros" RelativeSize="100" ImageName="">
+              <LayoutItem Id="Siniestros" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Seguros.Poliza_ListView">
+      <Columns>
+        <ColumnInfo Id="Carpeta" Index="-1" />
+        <ColumnInfo Id="Organizador" Index="-1" />
+        <ColumnInfo Id="PolizaPiloto" Index="-1" />
+        <ColumnInfo Id="PolizaRenovada" Index="-1" />
+        <ColumnInfo Id="Renueva" Index="-1" />
+        <ColumnInfo Id="VigenciaDias" Index="-1" />
+        <ColumnInfo Id="VigenciaDiasAlVencimiento" Index="-1" />
+        <ColumnInfo Id="VigenciaMeses" Index="-1" />
+        <ColumnInfo Id="Aseguradora" PropertyName="Aseguradora.Interviniente" />
+        <ColumnInfo Id="Tomador" PropertyName="Tomador.Interviniente" />
+        <ColumnInfo Id="SumaAsegurada" Index="18" />
+        <ColumnInfo Id="RolPiloto" Removed="True" />
+      </Columns>
+    </ListView>
+    <ListView Id="FDIT.Core.Seguros.PolizaItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Descripcion" Index="-1" Width="400" Removed="True" />
+        <ColumnInfo Id="Numero" PropertyName="Numero" Index="1" Width="50" IsNewNode="True" />
+        <ColumnInfo Id="ItemVigente.Documento" PropertyName="ItemVigente.Documento" Index="2" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="ItemVigente.TipoMovimiento" PropertyName="ItemVigente.TipoMovimiento" Index="3" Width="70" IsNewNode="True" />
+        <ColumnInfo Id="ItemVigente.Descripcion" PropertyName="ItemVigente.Descripcion" Index="4" Width="400" IsNewNode="True" />
+        <ColumnInfo Id="ItemVigente.Ubicacion" PropertyName="ItemVigente.Ubicacion" Index="7" Width="70" IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

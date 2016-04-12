@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <ActionDesign>
+    <Actions>
+      <Action Id="ChangeStateAction" Caption="Cambiar estado" ToolTip="Cambia el estado del objeto actual" />
+      <Action Id="CloneObject" Caption="Duplicar" ToolTip="Duplicar el elemento seleccionado" />
+      <Action Id="DialogClose" Caption="Cerrar" />
+      <Action Id="FullTextSearch" ShortCaption="Buscar" NullValuePrompt="Texto a buscar..." />
+      <Action Id="Link" Caption="Asociar" />
+      <Action Id="Logoff" Caption="Cerrar sesión" />
+      <Action Id="Logon" Caption="Ingresar" />
+      <Action Id="RefreshKpi" Caption="Actualizar KPI" />
+      <Action Id="ResetViewSettings" Caption="Restablecer vista" ToolTip="Restablecer la configuración de la vista &quot;{0}&quot;." ConfirmationMessage="Está por restablecer la configuración de la vista &quot;{0}&quot;. Confirma?" />
+      <Action Id="ShowChart" Caption="Mostrar gráfico" />
+      <Action Id="ShowItemsOnDashboard" Caption="Mostrar en el Tablero de Control" />
+      <Action Id="Unlink" Caption="Desasociar" ConfirmationMessage="Está a punto de desasociar el registro seleccionado(s). ¿Desea continuar?" />
+    </Actions>
+  </ActionDesign>
+  <BOModel>
+    <Class Name="DevExpress.ExpressApp.Editors.CriteriaProvider">
+      <OwnMembers>
+        <Member Name="FilteredObjectsType" Caption="Tipo de objetos a filtrar" />
+        <Member Name="FilterString" Caption="Cadena de filtro" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.PermissionMatrix.TypePermissionMatrixItem" Caption="Matriz de permisos por objeto" />
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRole">
+      <OwnMembers>
+        <Member Name="ChildRoles" Caption="Roles heredados" />
+        <Member Name="ParentRoles" Caption="Roles maestros" />
+        <Member Name="Users" Caption="Miembros del rol" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemRoleBase">
+      <OwnMembers>
+        <Member Name="CanEditModel" Caption="Puede editar el modelo" />
+        <Member Name="IsAdministrative" Caption="Es administrador" />
+        <Member Name="Name" Caption="Nombre" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemTypePermissionObject" Caption="Permisos de operación en objeto" />
+    <Class Name="DevExpress.ExpressApp.Security.Strategy.SecuritySystemUserBase">
+      <OwnMembers>
+        <Member Name="ChangePasswordOnFirstLogon" Caption="Cambiar contraseña en próximo inicio" />
+        <Member Name="IsActive" Caption="Habilitado" />
+        <Member Name="UserName" Caption="Nombre de usuario" />
+      </OwnMembers>
+    </Class>
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Estado" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Apariencia" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Procesador de estados" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Transición" />
+    <Class Name="FDIT.Core.BasicObject">
+      <OwnMembers>
+        <Member Name="AuditTrail" Caption="Auditoría" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FDIT.Core.Seguridad.CoreAppLogonParameters" Caption="Iniciar sesión">
+      <OwnMembers>
+        <Member Name="LoginUserName" Caption="Nombre de usuario" />
+        <Member Name="LoginGrupoCodigo" Caption="Código de grupo" />
+        <Member Name="LoginEmpresa" Caption="Empresa inicial" />
+        <Member Name="Password" Caption="Contraseña" />
+      </OwnMembers>
+    </Class>
+    <Class Name="FDIT.Core.Stock.Articulo">
+      <OwnMembers>
+        <Member Name="Nombre" ToolTip="Nombre del Articulo.&#xD;&#xA;Será usado en todo el sistema salvo en las impresiones,&#xD;&#xA;el cual usará el descripto en &quot;Descripciones Impresión&quot;." />
+        <Member Name="Alias" ToolTip="Nombre alternativo para denominar el Articulo." />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+  <Localization>
+    <LocalizationGroup Name="AuditTrail">
+      <LocalizationItem Name="BlobDataString" Value="Datos binarios" />
+      <LocalizationItem Name="NullValueString" Value="Sin valor" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Captions">
+      <LocalizationItem Name="DiagnosticChildWindowAddition" Value="(ventana auxiliar)" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Agregado">
+        <LocalizationItem Name="Single" Value="Unico" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.ExpressApp.Editors.ViewItemVisibility" Value="Visibilidad de item">
+        <LocalizationItem Name="Hide" Value="Ocultar" />
+        <LocalizationItem Name="Show" Value="Mostrar" />
+        <LocalizationItem Name="ShowEmptySpace" Value="Espacio vacío" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Tipo de comparación de valor" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Exceptions">
+      <LocalizationGroup Name="UserVisibleExceptions">
+        <LocalizationItem Name="ActionIsNotSingleChoiceAction" Value="No se puede registrar la Acción '{0}' en el Contenedor de acción '{1}'. La acción '{0}' no es del tipo '{2}'." />
+        <LocalizationItem Name="ApplicationUpdateError" Value="La actualización ha sido realizada correctamente. Sin embargo, la versión de base de datos es aún mayor que la versión de la aplicación. Póngase en contacto con el administrador del sistema." />
+        <LocalizationItem Name="CriteriaEditorsDataTypeIsNull" Value="Por favor, indique el tipo de objeto para el que desea crear una condición." />
+        <LocalizationItem Name="FieldValueSizeExceedsMaxLength" Value="La longitud de este valor no puede superar {0}" />
+        <LocalizationItem Name="LogonAttemptsAmountedToLimitWin" Value="Después de tres intentos fallidos de ingresar, la aplicación se cerrará. Por favor, considere contactar al administrador por sus datos de acceso." />
+        <LocalizationItem Name="MaskValidationErrorMessage" Value="Faltan ingresar símbolos" />
+        <LocalizationItem Name="ObjectAccessPermissionCannotBeEmpty" Value="El campo 'Object Type' no debe estar vacío y al menos un campo de acceso debe tener un valor diferente de None." />
+        <LocalizationItem Name="ObjectToSaveWasChanged" Value="El objeto que está tratando de guardar fue cambiado por otro usuario. Por favor, vuelva a cargar los datos." />
+        <LocalizationItem Name="RequestedObjectIsNotFound" Value="El objeto solicitado no se encuentra y no puede ser procesado." />
+        <LocalizationItem Name="SimultaneousChangeDataMessage" Value="Advertencia: Se detectan modificaciones simultáneas de la misma información en diferentes ventanas/vistas:\n&#xD;&#xA;{0}\n &#xD;&#xA;Es posible guardar las modificaciones en una sola ventana/vista ." />
+        <LocalizationGroup Name="Validation">
+          <LocalizationItem Name="ActionErrorMessageHeaderFormat" Value="Se encontraron problemas durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="AllContextsErrorMessageHeader" Value="Se encontraron problemas durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="DeleteErrorMessageHeader" Value="Se encontraron problemas durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="SaveErrorMessageHeader" Value="Se encontraron problemas durante la validación de datos. Por favor, lea la siguiente información para entender cuáles son los problemas y cómo se pueden corregir." />
+          <LocalizationItem Name="ValidationSucceededMessageHeader" Value="No se encontraron problemas." />
+        </LocalizationGroup>
+      </LocalizationGroup>
+    </LocalizationGroup>
+    <LocalizationGroup Name="Security">
+      <LocalizationItem Name="EmpresaNotNull" Value="Debe indicar la empresa" />
+      <LocalizationItem Name="GrupoNotNull" Value="Debe indicar un código de grupo válido" />
+      <LocalizationItem Name="UsuarioNotNull" Value="Debe ingresar el nombre de usuario" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="StateMachine">
+      <LocalizationItem Name="TransitionValidationMessage" Value="Para pasar al estado '{StateCaption}', el objeto '{TargetObject}' debe cumplir esta condición: {Criteria}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Texts">
+      <LocalizationItem Name="DefaultCulture" Value="(cultura predet.)" />
+      <LocalizationItem Name="NullValueText" Value="Sin valor" />
+      <LocalizationItem Name="Warning" Value="Advertencia" />
+    </LocalizationGroup>
+  </Localization>
+  <NavigationItems>
+    <Items>
+      <Item Id="Ventas">
+        <Items>
+          <Item Id="FDIT.Core.Ventas.Cliente_ListView" Caption="Clientes" />
+          <Item Id="Ventas_Comprobante_ListView" Caption="Comprobantes de venta" />
+          <Item Id="FDIT.Core.Ventas.AgrupacionCliente_ListView" Caption="Agrupaciones de clientes" />
+          <Item Id="FDIT.Core.Ventas.Recibo_ListView" Caption="Recibos de cobranzas" />
+          <Item Id="FDIT.Core.Gestion.ComprobanteCuota_ListView" Caption="Cuotas con saldo" />
+          <Item Id="vComprobanteDash" Caption="vComprobantesDash" />
+        </Items>
+      </Item>
+      <Item Id="Compras">
+        <Items>
+          <Item Id="FDIT.Core.Compras.Proveedor_ListView" Caption="Proveedores" />
+          <Item Id="FDIT.Core.Compras.Comprobante_ListView" Caption="Comprobantes de compra" />
+          <Item Id="FDIT.Core.Compras.OrdenPago_DetailView" Caption="Ordenes de pago" />
+        </Items>
+      </Item>
+      <Item Id="Fondos">
+        <Items>
+          <Item Id="CarteraDeCheques" Caption="Cartera de cheques" />
+        </Items>
+      </Item>
+      <Item Id="CRM">
+        <Items>
+          <Item Id="FDIT.Core.CRM.Actividad_ListView" Caption="Actividades" />
+          <Item Id="FDIT.Core.CRM.Caso_ListView" Caption="Casos de servicio" />
+        </Items>
+      </Item>
+      <Item Id="Stock" Caption="Stock" />
+      <Item Id="FDIT.Core.Personas.Persona_ListView" Caption="Personas" />
+      <Item Id="Configuración">
+        <Items>
+          <Item Id="Ventas">
+            <Items>
+              <Item Id="Singleton_FDIT.Core.Ventas.Identificadores" Caption="Preferencias" />
+            </Items>
+          </Item>
+          <Item Id="Compras">
+            <Items>
+              <Item Id="Singleton_FDIT.Core.Compras.Identificadores" Caption="Preferencias" />
+            </Items>
+          </Item>
+          <Item Id="Gestión">
+            <Items>
+              <Item Id="FDIT.Core.Gestion.Concepto_ListView" Caption="Conceptos de facturación" />
+              <Item Id="FDIT.Core.Gestion.CondicionDePago_ListView" Caption="Condiciones de pago" />
+              <Item Id="FDIT.Core.Gestion.MarcaComercial_ListView" Caption="Marcas comerciales" />
+              <Item Id="FDIT.Core.Gestion.Talonario_ListView" Caption="Talonarios" />
+              <Item Id="FDIT.Core.Gestion.Temporada_ListView" Caption="Temporadas" />
+              <Item Id="@893fce34-4e86-4ada-b056-69662a315bdf" Caption="Modelos de formulario de comprobante" />
+            </Items>
+          </Item>
+          <Item Id="@ce31c869-7f48-4cf6-8f7f-08a269d13e49" Caption="Fondos">
+            <Items>
+              <Item Id="Singleton_FDIT.Core.Fondos.Identificadores" Caption="Preferencias" />
+              <Item Id="FDIT.Core.Fondos.Banco_ListView" Caption="Bancos" />
+              <Item Id="FDIT.Core.Fondos.EspecieInstrumento_ListView" Caption="Instrumentos de pago" />
+              <Item Id="FDIT.Core.Fondos.Moneda_ListView" Caption="Monedas" />
+            </Items>
+          </Item>
+          <Item Id="@40595be6-896e-4299-9bee-681800b4f60f" Caption="CRM">
+            <Items>
+              <Item Id="FDIT.Core.CRM.CasoPrioridad_ListView" Caption="Prioridades de caso" />
+              <Item Id="FDIT.Core.CRM.CasoEstado_ListView" Caption="Estados de caso" />
+              <Item Id="FDIT.Core.CRM.CasoTipo_ListView" Caption="Tipos de caso" />
+              <Item Id="FDIT.Core.CRM.ActividadEstado_ListView" Caption="Estados de actividad" />
+              <Item Id="FDIT.Core.CRM.ActividadTipo_ListView" Caption="Tipos de actividad" />
+            </Items>
+          </Item>
+          <Item Id="Stock">
+            <Items>
+              <Item Id="FDIT.Core.Stock.Articulo_ListView" Caption="Artículos" />
+              <Item Id="@a10b515f-60ff-4499-834a-440c3b1e7c7a" Caption="Servicios" />
+              <Item Id="FDIT.Core.Stock.ListaDePrecios_ListView" Caption="Listas de precios" />
+              <Item Id="FDIT.Core.Stock.Almacen_ListView" Caption="Almacenes" />
+            </Items>
+          </Item>
+          <Item Id="Personas">
+            <Items>
+              <Item Id="FDIT.Core.Personas.ContactoTipo_ListView" Caption="Tipos de contactos" />
+              <Item Id="FDIT.Core.Personas.DireccionTipo_ListView" Caption="Tipos de direcciones" />
+              <Item Id="FDIT.Core.Personas.IdentificacionTipo_ListView" Caption="Tipos de identificaciones" />
+              <Item Id="FDIT.Core.Personas.Propiedad_ListView" Caption="Propiedades" />
+              <Item Id="FDIT.Core.Personas.RelacionTipo_ListView" Caption="Tipos de relaciones" />
+            </Items>
+          </Item>
+          <Item Id="Contabilidad">
+            <Items>
+              <Item Id="FDIT.Core.Contabilidad.Cuenta_ListView" Caption="Plan de cuentas" />
+            </Items>
+          </Item>
+          <Item Id="Regionales">
+            <Items>
+              <Item Id="Singleton_FDIT.Core.Regionales.Identificadores" Caption="Preferencias" />
+              <Item Id="FDIT.Core.Regionales.Pais_ListView" Caption="Datos regionales" />
+              <Item Id="FDIT.Core.Regionales.Ciudad_ListView" Caption="Ciudades" />
+              <Item Id="FDIT.Core.Regionales.Idioma_ListView" Caption="Idiomas" />
+            </Items>
+          </Item>
+          <Item Id="Impuestos">
+            <Items>
+              <Item Id="FDIT.Core.Impuestos.Impuesto_ListView" Caption="Config. de impuestos" />
+            </Items>
+          </Item>
+          <Item Id="Sistema">
+            <Items>
+              <Item Id="FDIT.Core.Sistema.Empresa_ListView" Caption="Empresa" />
+              <Item Id="XpoStateMachine_ListView" Caption="Estados y transiciones" />
+            </Items>
+          </Item>
+          <Item Id="Dashboards">
+            <Items>
+              <Item Id="Dashboard1" Caption="Texto" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <Views>
+    <DashboardView Id="Dashboard1">
+      <Items>
+        <StaticText Id="Texto" Caption="Texto" Text="qwqw" />
+      </Items>
+    </DashboardView>
+    <DetailView Id="FDIT.Core.Compras.Comprobante_DetailView">
+      <Items>
+        <PropertyEditor Id="AutorizadaCodigo" Caption="Código" />
+        <PropertyEditor Id="AutorizadaCodigoFecVto" Caption="Fec. Vto. " />
+        <PropertyEditor Id="Originante" Caption="Proveedor" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Comprobante_2" Caption="Datos del comprobante">
+                <LayoutGroup Id="Comprobante_2_col1">
+                  <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050">
+                    <LayoutGroup Id="Auto68149395-6db5-414f-9d3e-03f61746d3f7">
+                      <LayoutGroup Id="Auto1bf772a4-56bd-46fd-9b80-7b32600f9a8e" Caption="Auto1bf772a4-56bd-46fd-9b80-7b32600f9a8e" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Comprobante_2_col2">
+                  <LayoutGroup Id="Auto5dcc6619-aa36-4474-9aff-1f0540a74370">
+                    <LayoutGroup Id="Item4" Caption="Autorización fiscal" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Otros datos" />
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Compras.ComprobanteItem_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ComprobanteItem" Caption="Comprobante Item">
+              <LayoutGroup Id="ComprobanteItem_col1">
+                <LayoutGroup Id="Auto34694173-b41b-48f1-94f5-9887a5347bb4" Caption="" />
+                <LayoutGroup Id="Autoa918d3c5-28d6-45f6-83d8-1119b7b5b8bb" Caption="">
+                  <LayoutGroup Id="Autod15e5fbc-8bdb-4b0a-9a7c-fd1f398f5206" Caption="" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Compras.Proveedor_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Persona" />
+            <LayoutGroup Id="Proveedor" Caption="Proveedor">
+              <LayoutGroup Id="Proveedor_col1">
+                <LayoutGroup Id="Autod515f9c7-decb-4c60-ae2a-078afcd459df" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Proveedor_col2" Caption="Proveedor_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Rol" Caption="Persona" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Compras.Proveedor_ListView">
+      <Columns>
+        <ColumnInfo Id="Persona" Caption="Proveedor" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.CRM.Actividad_DetailView">
+      <Items>
+        <PropertyEditor Id="Direccion" Caption="Dirección" />
+        <PropertyEditor Id="DireccionDestinatario" Caption="Destinatario" />
+        <PropertyEditor Id="DireccionRemitente" Caption="Remitente" />
+        <PropertyEditor Id="EstadoPorcentaje" Caption="%" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Actividad" Caption="Actividad">
+                <LayoutGroup Id="Actividad_col1" Caption="Actividad_col1">
+                  <LayoutGroup Id="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52" Caption="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52(7)">
+                    <LayoutGroup Id="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d" Caption="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d(8)" />
+                    <LayoutGroup Id="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76" Caption="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76(11)" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Actividad_col2" Caption="Actividad_col2">
+                  <LayoutGroup Id="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1" Caption="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1(25)" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item3" Caption="Datos de servicio">
+                <LayoutGroup Id="Auto8f64cc55-6b48-4dfc-a57c-4c17cc85f518" Caption="" />
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="Actividad" Caption="Actividad">
+              <LayoutGroup Id="Actividad_col1" Caption="Actividad_col1">
+                <LayoutGroup Id="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52" Caption="Auto24bea7e8-e27e-4f2a-94b9-00dd55bcbd52(7)">
+                  <LayoutGroup Id="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d" Caption="Autocd475218-9b82-4b2c-8e53-cdebe9e2c22d(8)" />
+                  <LayoutGroup Id="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76" Caption="Auto5c90e10c-b165-4f52-aa89-1594cae9bc76(11)" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto9eb450e6-5467-4197-8646-e2cfe5772478" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Actividad_col2" Caption="Actividad_col2">
+                <LayoutGroup Id="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1" Caption="Auto1cccdc67-e907-4a2c-beb6-ed4fc2c18ad1(25)" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Contenido" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.CRM.Actividad_ListView">
+      <Variants>
+        <Variant Id="@5b7821e6-a259-4728-8696-737e6df5c3d7" Caption="Actividades" />
+        <Variant Id="@0153d1ca-1ae6-468c-8af1-54567a299c4d" Caption="Mis actividades asignadas" />
+      </Variants>
+    </ListView>
+    <ListView Id="FDIT.Core.CRM.ActividadTipo_LookupListView">
+      <Columns>
+        <ColumnInfo Id="TipoIcono" Caption="" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.CRM.Caso_DetailView">
+      <Items>
+        <PropertyEditor Id="ContratoItem" Caption="Item" />
+        <PropertyEditor Id="EstadoPorcentaje" Caption="%" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Caso" Caption="Caso">
+              <LayoutGroup Id="Caso_col1" Caption="Caso_col1">
+                <LayoutGroup Id="Auto14df5f34-ff02-4101-afd8-66e623fd62a3" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Caso_col2" Caption="Caso_col2">
+                <LayoutGroup Id="Autode0be02b-1d48-4b8f-bf77-2a08769dda3f" Caption="" />
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Contenido" />
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Responsables" Caption="Responsables" />
+            <LayoutGroup Id="ActividadesDelCaso" Caption="Actividades Del Caso" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.CRM.Contrato_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Contrato" Caption="Contrato">
+              <LayoutGroup Id="Contrato_col1">
+                <LayoutGroup Id="Auto4c7777b4-c10f-4eda-8c4d-78eb603d0c2f" Caption="Auto4c7777b4-c10f-4eda-8c4d-78eb603d0c2f(5)" />
+                <LayoutGroup Id="Auto5134f849-ba74-467c-86bb-4a34f6784c2a" Caption="Auto5134f849-ba74-467c-86bb-4a34f6784c2a(8)">
+                  <LayoutGroup Id="Autoc954f5fd-214c-4e12-98b4-d6e8f73325c0" Caption="Autoc954f5fd-214c-4e12-98b4-d6e8f73325c0(11)" />
+                </LayoutGroup>
+                <LayoutGroup Id="Autoadce35b8-3af1-441c-bf4d-2c00d10f5b4b" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Contrato_col2" Caption="Contrato_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Fondos.Banco_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="Item2" Caption="Persona" />
+          <LayoutGroup Id="Item1" Caption="Banco" />
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Banco" Caption="Banco" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Fondos.CentroDeCosto_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="CentroDeCosto">
+              <LayoutGroup Id="Item1" Caption="Centros de costo" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Fondos.Cheque_DetailView">
+      <Items>
+        <PropertyEditor Id="NoALaOrden" Caption="No a la orden" />
+        <PropertyEditor Id="OrdenOtro" Caption="Otro" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Cheque" Caption="Cheque" />
+            <LayoutGroup Id="Valor" Caption="Valor">
+              <LayoutGroup Id="Valor_col2" Caption="Valor_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Fondos.Cheque_ListView">
+      <Filters>
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5" Caption="En cartera" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy" Caption="Propios pend. débito" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy_Copy" Caption="Pendientes acreditación" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy_Copy_Copy" Caption="Propios debitados" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy_Copy_Copy_Copy" Caption="Acreditados" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy_Copy_Copy_Copy_Copy" Caption="Entregados" />
+        <Filter Id="@68f55a4a-2664-4c37-b17d-6e695f53ffd5_Copy_Copy_Copy_Copy_Copy_Copy" Caption="Propios en tránsito" />
+        <Filter Id="@dd4059ba-d2e2-426c-a3a5-a4957640b8c3" Caption="(Todos)" />
+      </Filters>
+    </ListView>
+    <DetailView Id="FDIT.Core.Fondos.Comprobante_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Auto82d9c50b-0472-49b0-9a8f-a274f4926687" Caption="Auto82d9c50b-0472-49b0-9a8f-a274f4926687(4)">
+              <LayoutGroup Id="ComprobanteBase_col1" Caption="ComprobanteBase_col1">
+                <LayoutGroup Id="Autoc064ce19-58b8-4d42-94f0-bd8ee40b1ab2" Caption="Autoc064ce19-58b8-4d42-94f0-bd8ee40b1ab2(8)" />
+              </LayoutGroup>
+              <LayoutGroup Id="ComprobanteBase_col2" Caption="ComprobanteBase_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Comprobante" Caption="Comprobante Reversion" />
+            <LayoutGroup Id="ComprobanteBase" Caption="Comprobante Base">
+              <LayoutGroup Id="ComprobanteBase_col1" Caption="ComprobanteBase_col1">
+                <LayoutGroup Id="Auto94420986-9729-452f-a9a2-23165eb69f99" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="ComprobanteBase_col2" Caption="ComprobanteBase_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Fondos.Cuenta_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Cuenta" Caption="Cuenta">
+              <LayoutGroup Id="Cuenta_col1">
+                <LayoutGroup Id="Auto0a718db3-616d-4477-a569-89b60f8fa0b1" Caption="Auto0a718db3-616d-4477-a569-89b60f8fa0b1(5)" />
+                <LayoutGroup Id="Auto8bdbf8fc-5b05-48d6-a594-60a021ee9710" Caption="Auto8bdbf8fc-5b05-48d6-a594-60a021ee9710(8)">
+                  <LayoutGroup Id="Auto8fc27d1f-5724-44f1-b7b1-ca50e564fc4a" Caption="Auto8fc27d1f-5724-44f1-b7b1-ca50e564fc4a(9)" />
+                  <LayoutGroup Id="Autobd595098-cebe-469f-a96b-00eeaeb2b161" Caption="Autobd595098-cebe-469f-a96b-00eeaeb2b161(12)">
+                    <LayoutGroup Id="Autoc1acd187-c69c-486b-9326-a10d5e1ac682" Caption="Autoc1acd187-c69c-486b-9326-a10d5e1ac682(13)" />
+                    <LayoutGroup Id="Auto4f50447b-501c-4091-a158-ba0613aafbdc" Caption="Auto4f50447b-501c-4091-a158-ba0613aafbdc(17)">
+                      <LayoutGroup Id="Auto13ecc184-6dd8-43ad-9431-575db172e38a" Caption="" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Cuenta_col2" Caption="Cuenta_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" Caption="Actividad" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Fondos.Especie_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Especie" Caption="Especie">
+              <LayoutGroup Id="Especie_col1">
+                <LayoutGroup Id="Auto68ea65b3-d68f-4f7e-92fb-ceae727c2a75" Caption="Auto68ea65b3-d68f-4f7e-92fb-ceae727c2a75(5)" />
+                <LayoutGroup Id="Auto24377984-e4a2-40ce-9a8c-45cc703db3d7" Caption="Auto24377984-e4a2-40ce-9a8c-45cc703db3d7(8)">
+                  <LayoutGroup Id="Auto01011f00-7613-42b9-9247-0c39e0fa6c84" Caption="" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="Item1" Caption="Actividad" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Gestion.ComprobanteCuota_Saldos_ListView" Caption="Cuotas con Saldo">
+      <Columns>
+        <ColumnInfo Id="Fecha" Caption="Vencimiento" />
+        <ColumnInfo Id="Numero" Caption="Cuota" />
+        <ColumnInfo Id="Especie" Caption="Especie" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Gestion.Concepto_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Concepto" Caption="Concepto">
+              <LayoutGroup Id="Concepto_col1">
+                <LayoutGroup Id="Auto2f929b99-0c71-4f69-94ef-008805a07162" Caption="Auto2f929b99-0c71-4f69-94ef-008805a07162(5)" />
+                <LayoutGroup Id="Auto93479028-8da8-4985-8a9e-3e6022f41d3a" Caption="Auto93479028-8da8-4985-8a9e-3e6022f41d3a(8)">
+                  <LayoutGroup Id="Autoc0cd092e-aff5-4b2d-b0e0-ccd63c733e57" Caption="Autoc0cd092e-aff5-4b2d-b0e0-ccd63c733e57(9)" />
+                  <LayoutGroup Id="Autoe3ede56f-2b1e-483e-8022-38fbb61aa17b" Caption="Autoe3ede56f-2b1e-483e-8022-38fbb61aa17b(12)">
+                    <LayoutGroup Id="Auto20152aa7-1946-49ba-836c-e8c7d2a19de8" Caption="Auto20152aa7-1946-49ba-836c-e8c7d2a19de8(14)">
+                      <LayoutGroup Id="Auto61ea453c-986f-4eba-9bf9-482f4450f7b5" Caption="Auto61ea453c-986f-4eba-9bf9-482f4450f7b5(15)" />
+                      <LayoutGroup Id="Auto55a3b28a-a54b-4334-b7de-fe9dd1dce191" Caption="Auto55a3b28a-a54b-4334-b7de-fe9dd1dce191(18)" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Concepto_col2" Caption="Concepto_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Valores" Caption="Valores">
+              <LayoutGroup Id="Autoa629fa7a-ee6e-40bb-9c34-f100d4158382" Caption="Autoa629fa7a-ee6e-40bb-9c34-f100d4158382(22)" />
+            </LayoutGroup>
+            <LayoutGroup Id="Actividad" Caption="Actividad" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Nombre" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.Direccion_DetailView">
+      <Items>
+        <PropertyEditor Id="CiudadOtra" Caption="Otra" />
+        <PropertyEditor Id="LocalidadOtra" Caption="Otra" />
+        <PropertyEditor Id="PaisOtro" Caption="Otro" />
+        <PropertyEditor Id="ProvinciaOtra" Caption="Otra" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Direccion" Caption="Direccion">
+              <LayoutGroup Id="Direccion_col1" Caption="Direccion_col1">
+                <LayoutGroup Id="Auto07dce745-926a-4abb-afff-acbe1de3728c" Caption="" />
+                <LayoutGroup Id="Autoba05e1af-7dc0-40eb-aab6-fb6166f97ce8" Caption="">
+                  <LayoutGroup Id="Auto146d9952-6f40-4449-ac04-8a996a0e8711" Caption="" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Direccion_col2" Caption="Direccion_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.Identificacion_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Identificacion" Caption="Identificacion">
+              <LayoutGroup Id="Auto75c99dd5-a204-4f89-ba28-18e61e81ddc4" Caption="Auto75c99dd5-a204-4f89-ba28-18e61e81ddc4(4)" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Notas" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.Persona_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors" />
+          <LayoutGroup Id="SizeableEditors" Caption="Notas" />
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Item1" Caption="Otras imágenes" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.PersonaDireccion_DetailView">
+      <Items>
+        <PropertyEditor Id="Direccion.CiudadOtra" Caption="Otra" />
+        <PropertyEditor Id="Direccion.LocalidadOtra" Caption="Otra" />
+        <PropertyEditor Id="Direccion.PaisOtro" Caption="Otro" />
+        <PropertyEditor Id="Direccion.ProvinciaOtra" Caption="Otra" />
+        <PropertyEditor Id="DireccionTipo" Caption="Tipo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Auto86946c86-029f-4cb4-bbca-48c892d38930" Caption="Auto86946c86-029f-4cb4-bbca-48c892d38930(3)" />
+            <LayoutGroup Id="PersonaDireccion" Caption="Dirección">
+              <LayoutGroup Id="PersonaDireccion_col1" Caption="PersonaDireccion_col1" />
+              <LayoutGroup Id="PersonaDireccion_col2" Caption="PersonaDireccion_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.PersonaImpuesto_DetailView" Caption="Dato impositivo">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="PersonaImpuesto" Caption="Persona Impuesto">
+              <LayoutGroup Id="PersonaImpuesto_col1" Caption="PersonaImpuesto_col1">
+                <LayoutGroup Id="Autoc8b37eb0-8499-4c56-8f6d-948789bee0e8" Caption="Autoc8b37eb0-8499-4c56-8f6d-948789bee0e8(6)" />
+                <LayoutGroup Id="Auto9ed61bce-4af0-4c53-a677-d022b7d336da" Caption="Auto9ed61bce-4af0-4c53-a677-d022b7d336da(13)" />
+              </LayoutGroup>
+              <LayoutGroup Id="PersonaImpuesto_col2" Caption="PersonaImpuesto_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Notas" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.PersonaPropiedad_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="PersonaPropiedad" Caption="Persona Propiedad">
+              <LayoutGroup Id="Autod79d0424-9ae4-4869-b487-207fea7b3bb3" Caption="" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Personas.Relacion_DetailView">
+      <Items>
+        <PropertyEditor Id="PersonaVinculado" Caption="Vinculado" />
+        <PropertyEditor Id="PersonaVinculante" Caption="Vinculante" />
+        <PropertyEditor Id="RelacionTipo" Caption="Tipo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Relacion" Caption="Relación">
+              <LayoutGroup Id="Relacion_col1" Caption="Relacion_col1">
+                <LayoutGroup Id="Auto2f0901cd-cc3a-4501-bb3f-9f9b02e55659" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="Relacion_col2" Caption="Relacion_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="Notas" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Sistema.Empresa_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Item2" Caption="Persona" />
+            <LayoutGroup Id="Empresa" Caption="Empresa">
+              <LayoutGroup Id="Empresa_col1">
+                <LayoutGroup Id="Auto3b27591e-e5af-4492-a2eb-a4763eb44e44" Caption="">
+                  <LayoutGroup Id="Auto74b1f9c0-ad2b-45cf-a27f-dfd551633c46" Caption="" />
+                  <LayoutGroup Id="Autodb57c653-23ba-407f-8d34-b199baed7e9f" Caption="" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Empresa_col2" Caption="Empresa_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Rol" Caption="Rol" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Usuarios" Caption="Usuarios de la empresa" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Sistema.Grupo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Persona" />
+            <LayoutGroup Id="Grupo" Caption="Grupo" />
+            <LayoutGroup Id="Rol" Caption="Persona" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Articulo_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="General">
+              <LayoutGroup Id="Articulo">
+                <LayoutGroup Id="Articulo_col1">
+                  <LayoutGroup Id="Auto20981d70-449a-4f62-88e7-58e92240c14b" Caption="Auto20981d70-449a-4f62-88e7-58e92240c14b(6)" />
+                  <LayoutGroup Id="Auto6d911ce8-7d7d-43c4-b2c9-f7c66a25e168" Caption="Auto6d911ce8-7d7d-43c4-b2c9-f7c66a25e168(9)">
+                    <LayoutGroup Id="Auto5e97d2f1-ced9-4f88-bef1-dc0db108bd19" Caption="Auto5e97d2f1-ced9-4f88-bef1-dc0db108bd19(10)" />
+                    <LayoutGroup Id="Auto87d63ccc-ee4f-4ff8-8443-a1f4ea265e93" Caption="Auto87d63ccc-ee4f-4ff8-8443-a1f4ea265e93(14)">
+                      <LayoutGroup Id="Auto5c7bde76-29e2-4421-ac7a-7e3b6882dc57" Caption="Auto5c7bde76-29e2-4421-ac7a-7e3b6882dc57(15)" />
+                      <LayoutGroup Id="Auto40d62a7b-33ec-438a-9b12-0d934532b795" Caption="Auto40d62a7b-33ec-438a-9b12-0d934532b795(18)">
+                        <LayoutGroup Id="Auto7d5615ed-7c83-4ba5-9f26-86a4c4893509" Caption="Auto7d5615ed-7c83-4ba5-9f26-86a4c4893509(19)" />
+                        <LayoutGroup Id="Autod5d7dd54-6336-4bd4-845f-bfa8a943f4aa" Caption="Autod5d7dd54-6336-4bd4-845f-bfa8a943f4aa(22)">
+                          <LayoutGroup Id="Auto4ba79279-7505-4b87-b20e-6c801ef604ea" Caption="Auto4ba79279-7505-4b87-b20e-6c801ef604ea(24)" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Descripciones" Caption="Descripciones" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Stock" Caption="Stock">
+                <LayoutGroup Id="Item5">
+                  <LayoutGroup Id="Auto1cc8d95b-00d0-4783-9ccb-99f541650ffc" Caption="Auto1cc8d95b-00d0-4783-9ccb-99f541650ffc(32)">
+                    <LayoutGroup Id="Autoed708efa-867f-4eca-af49-2ba408d01fa9" Caption="Autoed708efa-867f-4eca-af49-2ba408d01fa9(33)" />
+                    <LayoutGroup Id="Autoba7f0463-285a-4dbb-a87f-923bb2905792" Caption="Autoba7f0463-285a-4dbb-a87f-923bb2905792(36)" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Compra" Caption="Compra" />
+              <LayoutGroup Id="Venta" Caption="Venta" />
+              <LayoutGroup Id="Item1" Caption="Descripciones" />
+              <LayoutGroup Id="Item3" Caption="Precios por lista" />
+              <LayoutGroup Id="Item6" Caption="Propiedades" />
+              <LayoutGroup Id="Item9" Caption="Insumos" />
+              <LayoutGroup Id="Item11" Caption="Equivalencias" />
+              <LayoutGroup Id="Item10" Caption="Proveedores" />
+            </TabbedGroup>
+            <LayoutGroup Id="Articulo" Caption="Articulo" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="ArticuloPorProveedores" Caption="Articulo Por Proveedores" />
+            <LayoutGroup Id="Equivalencias" Caption="xxx" />
+            <LayoutGroup Id="Insumos" Caption="xxx" />
+            <LayoutGroup Id="Precios" Caption="xxx" />
+            <LayoutGroup Id="Propiedades" Caption="xxx" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Comprobante_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ComprobanteBase" Caption="Comprobante Base" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Deposito_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Deposito" Caption="Deposito" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.ListaDePrecios_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="ListaDePrecios" Caption="Lista De Precios" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Movimiento_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Movimiento" Caption="Movimiento" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Partida_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Partida" Caption="Partida" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Ventas.Cliente_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Item1" Caption="Persona" />
+            <LayoutGroup Id="Cliente" Caption="Cliente">
+              <LayoutGroup Id="Cliente_col1">
+                <LayoutGroup Id="Autof26ac022-e573-4725-a48e-14a6a71ca0eb" Caption="Autof26ac022-e573-4725-a48e-14a6a71ca0eb(7)" />
+                <LayoutGroup Id="Auto48140a1a-782d-41bf-be9f-eb7f356c9aad" Caption="Auto48140a1a-782d-41bf-be9f-eb7f356c9aad(10)" />
+              </LayoutGroup>
+              <LayoutGroup Id="Cliente_col2" Caption="Cliente_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="Rol" Caption="Persona" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Ventas.Cliente_ListView">
+      <Columns>
+        <ColumnInfo Id="Persona" Caption="Cliente" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Ventas.Comprobante_DetailView">
+      <Items>
+        <PropertyEditor Id="AutorizadaCodigo" Caption="Codigo" />
+        <PropertyEditor Id="AutorizadaCodigoFecVto" Caption="Vencimiento" />
+        <PropertyEditor Id="AutorizadaNotas" Caption="Notas" />
+        <PropertyEditor Id="AutorizadaResultado" Caption="Resultado" />
+        <PropertyEditor Id="Destinatario" Caption="Cliente" />
+        <PropertyEditor Id="IdentificacionNro" Caption="Número" />
+        <PropertyEditor Id="Numero" Caption="Numero" />
+        <PropertyEditor Id="Propio" Caption="Es propio" />
+        <PropertyEditor Id="Tipo" Caption="Tipo" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Comprobante_2" Caption="Comprobante de venta">
+              <LayoutGroup Id="Comprobante_2_col1" Caption="Comprobante_2_col1">
+                <LayoutGroup Id="Auto7284d70e-840d-46e0-823e-9d8008d075e7" Caption="Auto7284d70e-840d-46e0-823e-9d8008d075e7(5)" />
+                <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050" Caption="Autob93ec7f6-7e40-4594-917f-a5716c30b050(8)">
+                  <LayoutGroup Id="Auto98d4f268-95e8-434e-9344-b30576169299" Caption="Auto98d4f268-95e8-434e-9344-b30576169299(9)" />
+                  <LayoutGroup Id="Autod67d962d-05ef-440d-8ad9-9e80a144c72b" Caption="Autod67d962d-05ef-440d-8ad9-9e80a144c72b(13)">
+                    <LayoutGroup Id="Auto365ac82b-225a-4d49-8cc3-44e865323bb5" Caption="Auto365ac82b-225a-4d49-8cc3-44e865323bb5(14)" />
+                    <LayoutGroup Id="Autoe09535dc-1ae6-4adb-956d-691f50d98343" Caption="Autoe09535dc-1ae6-4adb-956d-691f50d98343(18)" />
+                    <LayoutGroup Id="Auto29a37c7a-9021-4aad-97b0-61f44d6d1c4b" Caption="Auto29a37c7a-9021-4aad-97b0-61f44d6d1c4b(21)">
+                      <LayoutGroup Id="Auto3c54c9fc-dd57-4878-b05a-e8434d8c055d" Caption="Auto3c54c9fc-dd57-4878-b05a-e8434d8c055d(22)" />
+                      <LayoutGroup Id="Autod0d44c3f-1f7d-45db-a153-5ed93cd0963d" Caption="Autod0d44c3f-1f7d-45db-a153-5ed93cd0963d(25)">
+                        <LayoutGroup Id="Auto27270c02-205a-4791-a7cf-2594c143177f" Caption="Auto27270c02-205a-4791-a7cf-2594c143177f(27)">
+                          <LayoutGroup Id="Auto62737bf6-d4e2-415b-8944-f7ada53768f9" Caption="Auto62737bf6-d4e2-415b-8944-f7ada53768f9(28)" />
+                          <LayoutGroup Id="Auto08a2a08c-15fe-48fe-885a-f0fbae2f2250" Caption="Auto08a2a08c-15fe-48fe-885a-f0fbae2f2250(31)" />
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Comprobante_2_col2" Caption="Comprobante_2_col2">
+                <LayoutGroup Id="Auto486f1f31-faa3-4cbe-8fa0-46d7b23e5a44" Caption="Auto486f1f31-faa3-4cbe-8fa0-46d7b23e5a44(36)" />
+                <LayoutGroup Id="Autocb4a06f9-d67c-4a61-a796-a25dcaa94e52" Caption="Autocb4a06f9-d67c-4a61-a796-a25dcaa94e52(41)" />
+                <LayoutGroup Id="Auto5dcc6619-aa36-4474-9aff-1f0540a74370" Caption="Auto5dcc6619-aa36-4474-9aff-1f0540a74370(44)">
+                  <LayoutGroup Id="Autoffaa0b1f-ae63-4624-a30a-630800bb9029" Caption="Autoffaa0b1f-ae63-4624-a30a-630800bb9029(46)" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Comprobante_2" Caption="Comprobante de venta">
+                <LayoutGroup Id="Comprobante_2_col1" Caption="Comprobante_2_col1">
+                  <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050" Caption="Autob93ec7f6-7e40-4594-917f-a5716c30b050(8)">
+                    <LayoutGroup Id="Auto98d4f268-95e8-434e-9344-b30576169299" Caption="Auto98d4f268-95e8-434e-9344-b30576169299(9)">
+                      <LayoutGroup Id="Item5" Caption="Item5" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autof0501646-5d9d-4541-bd8d-003416ab72b5" Caption="Autof0501646-5d9d-4541-bd8d-003416ab72b5(16)" />
+                    <LayoutGroup Id="Auto68149395-6db5-414f-9d3e-03f61746d3f7" Caption="Auto68149395-6db5-414f-9d3e-03f61746d3f7(19)">
+                      <LayoutGroup Id="Auto1bf772a4-56bd-46fd-9b80-7b32600f9a8e" Caption="Auto1bf772a4-56bd-46fd-9b80-7b32600f9a8e(21)" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autod34eae52-d316-42d6-b911-43a6d2e8a302" Caption="Autod34eae52-d316-42d6-b911-43a6d2e8a302(23)" />
+                  </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Comprobante_2_col2" Caption="Comprobante_2_col2">
+                  <LayoutGroup Id="Auto486f1f31-faa3-4cbe-8fa0-46d7b23e5a44" Caption="Auto486f1f31-faa3-4cbe-8fa0-46d7b23e5a44(36)">
+                    <LayoutGroup Id="Autof1714723-66fd-457a-a5c0-5be3cbc36831" Caption="Autof1714723-66fd-457a-a5c0-5be3cbc36831(32)" />
+                    <LayoutGroup Id="Auto2c4eba2f-3c79-45bb-bae0-e84c9c363c1c" Caption="Auto2c4eba2f-3c79-45bb-bae0-e84c9c363c1c(33)">
+                      <LayoutGroup Id="Autodec6b28a-611a-4243-901a-37f32764e350" Caption="Autodec6b28a-611a-4243-901a-37f32764e350(34)" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Auto5dcc6619-aa36-4474-9aff-1f0540a74370" Caption="Auto5dcc6619-aa36-4474-9aff-1f0540a74370(44)">
+                    <LayoutGroup Id="Item4" Caption="Autorización">
+                      <LayoutGroup Id="Autofead496b-ab46-43a4-8bef-fcb330b2c21a" Caption="Autofead496b-ab46-43a4-8bef-fcb330b2c21a(41)" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autof9d3e1b2-76b0-4d68-97c5-42f41dd4597f" Caption="Autof9d3e1b2-76b0-4d68-97c5-42f41dd4597f(45)" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="Item2" Caption="Otros datos">
+                <LayoutGroup Id="Auto17cae93c-413d-4b04-8c14-1c862aeae4b7" Caption="Auto17cae93c-413d-4b04-8c14-1c862aeae4b7(48)" />
+                <LayoutGroup Id="Auto75bed8a6-d675-49e9-b190-96eb875c306b" Caption="Auto75bed8a6-d675-49e9-b190-96eb875c306b(51)">
+                  <LayoutGroup Id="Auto067793e9-e4e0-4a7d-af0a-d26026317f74" Caption="Auto067793e9-e4e0-4a7d-af0a-d26026317f74(53)" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+            <LayoutGroup Id="ComprobanteBase" Caption="Comprobante Base">
+              <LayoutGroup Id="ComprobanteBase_col1" Caption="ComprobanteBase_col1" />
+              <LayoutGroup Id="ComprobanteBase_col2" Caption="ComprobanteBase_col2" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Items" Caption="Detalle del comprobante" />
+            <LayoutGroup Id="Cuotas" Caption="Cuotas" />
+          </TabbedGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Ventas.Comprobante_ListView">
+      <Columns>
+        <ColumnInfo Id="Descripcion" Caption="Comprobante" />
+        <ColumnInfo Id="Destinatario" Caption="Cliente" />
+      </Columns>
+    </ListView>
+    <DetailView Id="FDIT.Core.Ventas.Recibo_DetailView">
+      <Items>
+        <PropertyEditor Id="Destinatario" Caption="Cliente" />
+      </Items>
+      <Layout>
+        <LayoutGroup Id="Main" Caption="Main">
+          <LayoutGroup Id="SimpleEditors" Caption="SimpleEditors">
+            <LayoutGroup Id="Comprobante" Caption="Comprobante Reversion" />
+            <LayoutGroup Id="ComprobanteBase_col1" Caption="ComprobanteBase_col1">
+              <LayoutGroup Id="Auto83d73817-31a0-45a3-a2f8-9b6ae4427fce" Caption="" />
+            </LayoutGroup>
+            <LayoutGroup Id="ComprobanteBase" Caption="Comprobante Base">
+              <LayoutGroup Id="ComprobanteBase_col1" Caption="ComprobanteBase_col1">
+                <LayoutGroup Id="Auto30e6892e-66d5-4494-a7fe-c59c42b6bdf5" Caption="" />
+              </LayoutGroup>
+              <LayoutGroup Id="ComprobanteBase_col2" Caption="ComprobanteBase_col2" />
+            </LayoutGroup>
+            <LayoutGroup Id="ComprobanteBase_col2" Caption="ComprobanteBase_col2" />
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="FDIT.Core.Ventas.vComprobante_ListView" Caption="Comprobante (Vista)" />
+  </Views>
+</Application>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97CAEE64-8FFB-41CA-89DB-03A9057EFF28}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FDIT.Core.Seguros</RootNamespace>
+    <AssemblyName>FDIT.Core.Module.Seguros</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Validation.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v15.2, Version=15.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v15.2.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v15.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\PolizaController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoItemController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\NuevoDocumentoDetailController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoIntervinienteItemHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoPlanDetalleHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoItemDetalleHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoPlanHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoIntervinienteHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\DocumentoItemHistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controllers\Base\HistorialController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modelo\Base\IMovimientoHistorial.cs" />
+    <Compile Include="Controllers\NuevoDocumentoController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Modelo\Base\IObjetoConHistorial.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoClase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemPersonalGrupal.cs" />
+    <Compile Include="Modelo\Base\HistorialHelper.cs" />
+    <Compile Include="Modelo\Base\IObjetoConImportes.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoSubclase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\RuleDocumentoItemValido.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\RuleDocumentoValido.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaItemDetalle.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaPlanDetalle.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaPlan.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaIntervinienteItem.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoIntervinienteBase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaInterviniente.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DetalleBase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoImporteBase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoIntervinienteItem.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemDetalleImporte.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemImporte.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoPlanDetalle.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\PolizaItem.cs" />
+    <Compile Include="Modelo\Parametria\TipoImporte.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoImporte.cs" />
+    <Compile Include="Modelo\Cotizacion.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Carpeta.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemPersonal.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemVehiculo.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Poliza.cs" />
+    <Compile Include="Modelo\Parametria\TipoImporteRegla.cs" />
+    <Compile Include="Modelo\Base\TipoMovimiento.cs" />
+    <Compile Include="SegurosModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SegurosModule.Designer.cs">
+      <DependentUpon>SegurosModule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Parametria\Aseguradora.cs" />
+    <Compile Include="Modelo\TipoLiquidacion.cs" />
+    <Compile Include="Modelo\Parametria\AseguradoraProductor.cs" />
+    <Compile Include="Modelo\Parametria\Productor.cs" />
+    <Compile Include="Modelo\Parametria\Titulo.cs" />
+    <Compile Include="Modelo\Parametria\PlanCoberturaDetalle.cs" />
+    <Compile Include="Modelo\Parametria\TituloTipo.cs" />
+    <Compile Include="Modelo\Parametria\PeriodicidadFacturacion.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\Documento.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoCuota.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoCuotaAplicacionTipo.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentosCuotasEstados.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoEstado.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoInterviniente.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItem.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemClase.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemDetalle.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoItemParentesco.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoPilotoRol.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoPlan.cs" />
+    <Compile Include="Modelo\Poliza y carpeta\Documentos\DocumentoTipo.cs" />
+    <Compile Include="Modelo\Parametria\Identificadores.cs" />
+    <Compile Include="Modelo\Parametria\Interes.cs" />
+    <Compile Include="Modelo\Intermediario.cs" />
+    <Compile Include="Modelo\LiquidacionAAseguradora.cs" />
+    <Compile Include="Modelo\LiquidacionAAseguradoraItem.cs" />
+    <Compile Include="Modelo\LiquidacionAIntermediario.cs" />
+    <Compile Include="Modelo\LiquidacionAIntermediarioItem.cs" />
+    <Compile Include="Modelo\Siniestros\Liquidador.cs" />
+    <Compile Include="Modelo\Parametria\FormaDePago.cs" />
+    <Compile Include="Modelo\Parametria\LineaAseguradora.cs" />
+    <Compile Include="Modelo\Parametria\LineaNegocio.cs" />
+    <Compile Include="Modelo\Parametria\NegocioRiesgo.cs" />
+    <Compile Include="Modelo\Parametria\PlanCobertura.cs" />
+    <Compile Include="Modelo\Parametria\PlanDePago.cs" />
+    <Compile Include="Modelo\Parametria\PlanPrecio.cs" />
+    <Compile Include="Modelo\Parametria\ListaDePrecios.cs" />
+    <Compile Include="Modelo\RendicionDeAseguradora.cs" />
+    <Compile Include="Modelo\RendicionDeAseguradoraItem.cs" />
+    <Compile Include="Modelo\Parametria\Subramo.cs" />
+    <Compile Include="Modelo\Parametria\Rol.cs" />
+    <Compile Include="Modelo\Parametria\Ramo.cs" />
+    <Compile Include="Modelo\Siniestros\Siniestro.cs" />
+    <Compile Include="Modelo\Siniestros\SiniestroEstado.cs" />
+    <Compile Include="Modelo\Siniestros\SiniestroLiquidacion.cs" />
+    <Compile Include="Modelo\Siniestros\SiniestroLiquidacionTipoMovimiento.cs" />
+    <Compile Include="Modelo\Siniestros\SiniestroTipo.cs" />
+    <Compile Include="Modelo\Siniestros\SiniestroTipoDePerdida.cs" />
+    <Compile Include="Modelo\UnidadMedidaTasa.cs" />
+    <Compile Include="Modelo\VehiculoColor.cs" />
+    <Compile Include="Modelo\VehiculoMarca.cs" />
+    <Compile Include="Modelo\VehiculoModelo.cs" />
+    <Compile Include="Modelo\VehiculoFabricacion.cs" />
+    <Compile Include="Modelo\VehiculoTipo.cs" />
+    <Compile Include="Modelo\VehiculoUso.cs" />
+    <Compile Include="Modelo\Parametria\VentaTipo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controllers\PolizaController.resx">
+      <DependentUpon>PolizaController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SegurosModule.resx">
+      <DependentUpon>SegurosModule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CORE\Core.Module\Core.Module.csproj">
+      <Project>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</Project>
+      <Name>Core.Module</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.es.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

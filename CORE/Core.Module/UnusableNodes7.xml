@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="CodigoEWS" Index="-1" />
+        <ColumnInfo Id="ModifFechaEWS" Index="-1" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

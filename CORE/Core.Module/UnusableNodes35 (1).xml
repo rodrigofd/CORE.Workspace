@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+    <DetailView Id="FDIT.Core.Stock.Almacen_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="32">
+            <LayoutGroup Id="Almacen" Caption="Almacen" RelativeSize="82" Direction="Vertical">
+              <LayoutGroup Id="Almacen_col1" RelativeSize="77">
+                <LayoutGroup Id="Auto2420b6c9-4b2e-4925-85fa-69d4e42fc58f" ShowCaption="False" Direction="Horizontal" Index="0" RelativeSize="28">
+                  <LayoutItem Id="Nombre" ViewItem="Nombre" SizeConstraintsType="Default" Index="0" RelativeSize="19" />
+                  <LayoutItem Id="Direccion" ViewItem="Direccion" SizeConstraintsType="Default" Index="1" RelativeSize="80" />
+                </LayoutGroup>
+                <LayoutItem Id="Calificacion" SizeConstraintsType="Default" RelativeSize="21" Index="1" />
+                <LayoutItem Id="GestionFinanciera" ViewItem="GestionFinanciera" SizeConstraintsType="Default" Index="2" RelativeSize="21" />
+                <LayoutItem Id="FechaBaja" ViewItem="FechaBaja" SizeConstraintsType="Default" Index="3" RelativeSize="28" />
+                <LayoutItem Id="Direccion" SizeConstraintsType="Default" RelativeSize="17" Removed="True" />
+                <LayoutItem Id="Nombre" SizeConstraintsType="Default" RelativeSize="23" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Almacen_col2" RelativeSize="48" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="FechaBaja" Removed="True" />
+                <LayoutItem Id="GestionFinanciera" Removed="True" />
+                <LayoutItem Id="Notas" Removed="True" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutItem Id="Notas" ViewItem="Notas" SizeConstraintsType="Default" Index="1" RelativeSize="17" />
+          </LayoutGroup>
+          <TabbedGroup Id="Tabs" RelativeSize="67">
+            <LayoutGroup Id="Existencias" RelativeSize="100">
+              <LayoutItem Id="Existencias" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="Vinculos" Removed="True" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Existencia_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Existencia" RelativeSize="100">
+              <LayoutItem Id="Almacen" SizeConstraintsType="Default" RelativeSize="4" />
+              <LayoutItem Id="Cantidad" SizeConstraintsType="Default" RelativeSize="95" />
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="Vinculos_Group" Removed="True" />
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Stock.Articulo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs">
+            <LayoutGroup Id="Existencias" RelativeSize="100" Index="0">
+              <LayoutItem Id="Existencias" SizeConstraintsType="Default" RelativeSize="100" />
+            </LayoutGroup>
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Configuración">
+        <Items Id="Items">
+          <Item Id="Stock">
+            <Items Id="Items">
+              <Item Id="FDIT.Core.Stock.Almacen_ListView" ViewId="FDIT.Core.Stock.Almacen_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

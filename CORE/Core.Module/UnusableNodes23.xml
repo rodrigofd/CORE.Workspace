@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+    <DetailView Id="FDIT.Core.Fondos.Cheque_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="Cheque">
+              <LayoutGroup Id="Cheque_col2">
+                <LayoutGroup Id="Autof5300436-7118-456e-a7b3-066a46922ee3">
+                  <LayoutGroup Id="Autoe34dedcd-6c00-405a-802a-d04a9e8f99ca">
+                    <LayoutItem Id="AnuladoMotivo" ViewItem="AnuladoMotivo" />
+                  </LayoutGroup>
+                  <LayoutGroup Id="Autobc1645ec-a7d8-4a66-93cf-42d3ea67f64e">
+                    <LayoutItem Id="Anulado" ViewItem="Anulado" />
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="VentasConfirmarComprobante" ImageName="document_mark_as_final" />
+    </Actions>
+  </ActionDesign>
+</Application>

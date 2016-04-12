@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Configuración">
+        <Items Id="Items">
+          <Item Id="AFIP">
+            <Items Id="Items">
+              <Item Id="FDIT.Core.AFIP.Moneda_ListView" ViewId="FDIT.Core.AFIP.Moneda_ListView" />
+              <Item Id="FDIT.Core.AFIP.IdentificacionTipo_ListView" ViewId="FDIT.Core.AFIP.IdentificacionTipo_ListView" />
+              <Item Id="FDIT.Core.AFIP.CodigoDestinacion_ListView" ViewId="FDIT.Core.AFIP.CodigoDestinacion_ListView" />
+              <Item Id="FDIT.Core.AFIP.ComprobanteTipo_ListView" ViewId="FDIT.Core.AFIP.ComprobanteTipo_ListView" />
+              <Item Id="FDIT.Core.AFIP.ImpuestoCategoria_ListView" ViewId="FDIT.Core.AFIP.ImpuestoCategoria_ListView" />
+              <Item Id="FDIT.Core.AFIP.CaeMotivo_ListView" ViewId="FDIT.Core.AFIP.CaeMotivo_ListView" />
+              <Item Id="FDIT.Core.AFIP.Sesion_ListView" ViewId="FDIT.Core.AFIP.Sesion_ListView" />
+              <Item Id="FDIT.Core.AFIP.Ente_ListView" ViewId="FDIT.Core.AFIP.Ente_ListView" />
+              <Item Id="Singleton_FDIT.Core.AFIP.Identificadores" ViewId="FDIT.Core.AFIP.Identificadores_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

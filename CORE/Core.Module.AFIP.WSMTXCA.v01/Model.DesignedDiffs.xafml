@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Configuración" Caption="Configuración" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="AFIP" Index="999" IsNewNode="True">
+            <Items IsNewNode="True">
+              <Item Id="Singleton_FDIT.Core.AFIP.Identificadores" ViewId="FDIT.Core.AFIP.Identificadores_ListView" ObjectKey="" Index="0" Caption="Preferencias" ImageName="" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.Ente_ListView" ViewId="FDIT.Core.AFIP.Ente_ListView" ObjectKey="" Index="1" Caption="Entes habilitadas" ImageName="ssl_certificates" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.Sesion_ListView" ViewId="FDIT.Core.AFIP.Sesion_ListView" ObjectKey="" Index="2" Caption="Sesiones" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.CaeMotivo_ListView" ViewId="FDIT.Core.AFIP.CaeMotivo_ListView" ObjectKey="" Index="4" Caption="Motivos CAE" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.ImpuestoCategoria_ListView" ViewId="FDIT.Core.AFIP.ImpuestoCategoria_ListView" ObjectKey="" Index="5" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.ComprobanteTipo_ListView" ViewId="FDIT.Core.AFIP.ComprobanteTipo_ListView" ObjectKey="" Index="6" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.CodigoDestinacion_ListView" ViewId="FDIT.Core.AFIP.CodigoDestinacion_ListView" ObjectKey="" Caption="Codigos de Destinación" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.IdentificacionTipo_ListView" ViewId="FDIT.Core.AFIP.IdentificacionTipo_ListView" ObjectKey="" Caption="Tipos de identificaciones" IsNewNode="True" />
+              <Item Id="FDIT.Core.AFIP.Moneda_ListView" ViewId="FDIT.Core.AFIP.Moneda_ListView" ObjectKey="" IsNewNode="True" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="13.1.12.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

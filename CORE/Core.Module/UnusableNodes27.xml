@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.CRM.Actividad_ListView">
+      <Node Id="Variants@5a39f249-5673-4495-b9d6-3e28d51de893" UnusableNodeName="Variants">
+        <Node Id="@5b7821e6-a259-4728-8696-737e6df5c3d7" UnusableNodeName="Variant" ViewID="FDIT.Core.CRM.Actividad_ListView" Index="0" IsNewNode="True" />
+        <Node Id="@0153d1ca-1ae6-468c-8af1-54567a299c4d" UnusableNodeName="Variant" ViewID="FDIT.Core.CRM.Actividad_ListView_UsuarioActual" Index="1" IsNewNode="True" />
+      </Node>
+      <Node Id="Variants@d6be906e-279b-4ed7-a1fb-38b0fd8a5a68" UnusableNodeName="Variants">
+        <Node Id="@5b7821e6-a259-4728-8696-737e6df5c3d7" UnusableNodeName="Variant" Caption="Actividades" />
+        <Node Id="@0153d1ca-1ae6-468c-8af1-54567a299c4d" UnusableNodeName="Variant" Caption="Mis actividades asignadas" />
+      </Node>
+    </ListView>
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Reports" Removed="True" />
+      <Item Id="State Machine" Removed="True" />
+      <Item Id="Configuración">
+        <Items Id="Items">
+          <Item Id="Sistema">
+            <Items Id="Items">
+              <Item Id="XpoStateMachine_ListView" ViewId="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine_ListView" />
+            </Items>
+          </Item>
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

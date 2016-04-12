@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="FDIT.Core.CRM.Actividad_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <TabbedGroup Id="Tabs" RelativeSize="60">
+            <LayoutGroup Id="Item2" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="0" RelativeSize="100" Caption="Contenido">
+              <LayoutItem Id="Contenido" ViewItem="Contenido" CaptionLocation="Top" SizeConstraintsType="Default" Index="0" RelativeSize="100" ShowCaption="False" />
+            </LayoutGroup>
+            <LayoutGroup Id="Responsables" Caption="Responsables" Index="1" />
+          </TabbedGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

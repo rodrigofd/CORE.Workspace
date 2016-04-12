@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="FDIT.Core.Seguros.DocumentoItemPersonal_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DocumentoItem">
+              <LayoutGroup Id="DocumentoItem_col1">
+                <LayoutGroup Id="Autof41c1aec-4b80-48ea-884c-84c877a59a34">
+                  <LayoutGroup Id="Auto6f73368b-3ff8-4e97-97ab-aa18a68f705c">
+                    <LayoutGroup Id="Auto8db730c2-48e6-4946-8605-48551a05a3af">
+                      <LayoutItem Id="TipoPrecio" ViewItem="TipoPrecio" />
+                      <LayoutItem Id="Clase" ViewItem="Clase" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Autoe0824a68-4651-4125-ae46-b651d6cec61f">
+                      <LayoutItem Id="Cantidad" ViewItem="Cantidad" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem Id="NumeroItemAseguradora" ViewItem="NumeroItemAseguradora" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto8991e571-5e42-4fbd-a2b3-dcebd4275ed6">
+                  <LayoutItem Id="NumeroItem" ViewItem="NumeroItem" />
+                  <LayoutItem Id="Tipo" ViewItem="Tipo" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItem_col2">
+                <LayoutGroup Id="Autodadbcd09-7684-4251-8bc7-92e5ed20e94f">
+                  <LayoutItem Id="Iva1" ViewItem="Iva1" />
+                  <LayoutItem Id="Iva1Tasa" ViewItem="Iva1Tasa" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="DetallaCoberturas" ViewItem="DetallaCoberturas" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="FDIT.Core.Seguros.DocumentoItemVehiculo_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="DocumentoItem">
+              <LayoutGroup Id="DocumentoItem_col1">
+                <LayoutGroup Id="Auto373dbf2c-a60f-4c61-9afe-8b97a5716df8">
+                  <LayoutGroup Id="Auto51355e58-9ab3-4a1e-82e9-23b164c52e83">
+                    <LayoutGroup Id="Autof5b47f60-2b11-4457-a726-9cac30d7ee82">
+                      <LayoutItem Id="TipoPrecio" ViewItem="TipoPrecio" />
+                      <LayoutItem Id="Clase" ViewItem="Clase" />
+                    </LayoutGroup>
+                    <LayoutGroup Id="Auto562ffc31-e284-4195-b78f-809bf306096f">
+                      <LayoutItem Id="Cantidad" ViewItem="Cantidad" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem Id="NumeroItemAseguradora" ViewItem="NumeroItemAseguradora" />
+                </LayoutGroup>
+                <LayoutGroup Id="Auto42f7b420-3144-41f4-8ca3-b4fd090a26e1">
+                  <LayoutItem Id="NumeroItem" ViewItem="NumeroItem" />
+                  <LayoutItem Id="Tipo" ViewItem="Tipo" />
+                </LayoutGroup>
+              </LayoutGroup>
+              <LayoutGroup Id="DocumentoItem_col2">
+                <LayoutGroup Id="Autobe5a9216-2ec5-4e46-bdf9-115d5d82c662">
+                  <LayoutItem Id="Iva1" ViewItem="Iva1" />
+                  <LayoutItem Id="Iva1Tasa" ViewItem="Iva1Tasa" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+          <LayoutGroup Id="SizeableEditors">
+            <LayoutItem Id="DetallaCoberturas" ViewItem="DetallaCoberturas" />
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

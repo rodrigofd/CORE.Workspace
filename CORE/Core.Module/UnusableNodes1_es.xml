@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoState" Caption="Estado" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateAppearance" Caption="Apariencia" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoStateMachine" Caption="Procesador de estados" />
+    <Class Name="DevExpress.ExpressApp.StateMachine.Xpo.XpoTransition" Caption="Transición" />
+  </BOModel>
+  <Localization Id="Localization">
+    <LocalizationGroup Name="AuditTrail">
+      <LocalizationItem Name="BlobDataString" Value="Datos binarios" />
+      <LocalizationItem Name="NullValueString" Value="Sin valor" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="StateMachine">
+      <LocalizationItem Name="TransitionValidationMessage" Value="Para pasar al estado '{StateCaption}', el objeto '{TargetObject}' debe cumplir esta condición: {Criteria}" />
+    </LocalizationGroup>
+    <LocalizationGroup Name="Enums">
+      <LocalizationGroup Name="DevExpress.Data.Filtering.Aggregate" Value="Agregado">
+        <LocalizationItem Name="Single" Value="Unico" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValidationState" Value="Estado de validez">
+        <LocalizationItem Name="Skipped" Value="Omitido" />
+      </LocalizationGroup>
+      <LocalizationGroup Name="DevExpress.Persistent.Validation.ValueComparisonType" Value="Tipo de comparación de valor" />
+    </LocalizationGroup>
+  </Localization>
+  <ActionDesign Id="ActionDesign">
+    <Actions Id="Actions">
+      <Action Id="ChangeStateAction" Caption="Cambiar estado" ToolTip="Cambia el estado del objeto actual" />
+      <Action Id="CloneObject" Caption="Duplicar" ToolTip="Duplicar el elemento seleccionado" />
+    </Actions>
+  </ActionDesign>
+</Application>

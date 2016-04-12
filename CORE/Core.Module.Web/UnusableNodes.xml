@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="FDIT.Core.Personas.Persona_ListView">
+        <Items Id="Items">
+          <Item Id="@b3817595-4856-45c3-9aa6-6974f1dc8f3b" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

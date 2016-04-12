@@ -1,0 +1,170 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.CloneObject;
+using DevExpress.ExpressApp.ConditionalAppearance;
+using DevExpress.ExpressApp.Editors;
+using DevExpress.ExpressApp.Reports;
+using DevExpress.ExpressApp.Security;
+using DevExpress.ExpressApp.StateMachine;
+using DevExpress.ExpressApp.StateMachine.Xpo;
+using DevExpress.ExpressApp.SystemModule;
+using DevExpress.ExpressApp.Validation;
+using DevExpress.ExpressApp.Web.SystemModule;
+using DevExpress.ExpressApp.Xpo;
+using DevExpress.Persistent.BaseImpl;
+using FDIT.Core.Seguridad;
+using FDIT.Core.Web.Controllers;
+
+namespace FDIT.Core.Web
+{
+  public class WebApplicationBase : DevExpress.ExpressApp.Web.WebApplication
+  {
+    protected AuthenticationCoreApp authenticationCoreApp1;
+    protected SystemModule systemModule;
+    protected SystemAspNetModule systemAspNetModule;
+    protected WebModule webModule;
+    protected ReportsModule reportsModule1;
+    protected SecurityModule securityModule1;
+    protected SecurityStrategyComplex securityStrategyComplex1;
+    protected CloneObjectModule cloneObjectModule1;
+    protected ConditionalAppearanceModule conditionalAppearanceModule1;
+    protected CoreModule coreModule1;
+    protected SqlConnection sqlConnection1;
+    protected StateMachineModule stateMachineModule1;
+    protected ValidationModule validationModule1;
+    
+    public WebApplicationBase( )
+    {
+      InitializeComponent( );
+
+      var fileSystemStoreLoc = Convert.ToString( ConfigurationManager.AppSettings[ "FileAttachmentBasePath" ] );
+      if( !string.IsNullOrEmpty( fileSystemStoreLoc ) )
+        fileSystemStoreLoc = HttpContext.Current.Server.MapPath( fileSystemStoreLoc );
+      coreModule1.FileAttachmentsBasePath = fileSystemStoreLoc;
+    }
+
+    protected override void CreateDefaultObjectSpaceProvider( CreateCustomObjectSpaceProviderEventArgs args )
+    {
+      args.ObjectSpaceProvider = new XPObjectSpaceProviderThreadSafe( args.ConnectionString, args.Connection );
+    }
+
+    protected override void OnLoggedOn( LogonEventArgs args )
+    {
+      base.OnLoggedOn( args );
+
+      var coreAppLogonParameters = ( CoreAppLogonParameters ) args.LogonParameters;
+
+      SetSessionRegionalSettings( coreAppLogonParameters );
+    }
+
+    protected virtual void SetSessionRegionalSettings( CoreAppLogonParameters logonParameters )
+    {
+      var usuario = logonParameters.UsuarioActual( );
+
+      var language = "";
+
+      if( usuario.EmpresaPredeterminada.Persona.Grupo.IdiomaPredeterminado != null )
+        language = usuario.EmpresaPredeterminada.Persona.Grupo.IdiomaPredeterminado.Codigo1;
+      if( usuario.EmpresaPredeterminada.IdiomaPredeterminado != null )
+        language = usuario.EmpresaPredeterminada.IdiomaPredeterminado.Codigo1;
+      if( usuario.IdiomaPredeterminado != null )
+        language = usuario.IdiomaPredeterminado.Codigo1;
+
+      if( language != "" )
+        SetLanguage( language );
+
+      var culture = "";
+
+      if( usuario.EmpresaPredeterminada.Persona.Grupo.CulturaPredeterminada != null )
+        culture = usuario.EmpresaPredeterminada.Persona.Grupo.CulturaPredeterminada.Codigo;
+      if( usuario.EmpresaPredeterminada.CulturaPredeterminada != null )
+        culture = usuario.EmpresaPredeterminada.CulturaPredeterminada.Codigo;
+      if( usuario.CulturaPredeterminada != null )
+        culture = usuario.CulturaPredeterminada.Codigo;
+
+      if( culture != "" )
+        SetFormattingCulture( culture );
+    }
+
+    protected override List<Controller> CreateLogonWindowControllers( )
+    {
+      var controllers = base.CreateLogonWindowControllers( );
+      controllers.Add( new HighlightFocusedLayoutItemDetailViewController( ) );
+
+      //foreach( var c in controllers.OfType<FocusAcceptButtonController>( ) )
+      //  c.Active[ "NotInLogonWindow" ] = false;
+
+      controllers.Add( CreateController<WebFocusDefaultDetailViewItemController>( ) );
+
+      return controllers;
+    }
+
+    private void CoreAspNetApplication_DatabaseVersionMismatch( object sender, DatabaseVersionMismatchEventArgs e )
+    {
+      e.Updater.Update( );
+      e.Handled = true;
+    }
+
+    private void InitializeComponent( )
+    {
+      systemModule = new SystemModule( );
+      systemAspNetModule = new SystemAspNetModule( );
+      webModule = new WebModule( );
+      sqlConnection1 = new SqlConnection( );
+      cloneObjectModule1 = new CloneObjectModule( );
+      reportsModule1 = new ReportsModule( );
+      validationModule1 = new ValidationModule( );
+      conditionalAppearanceModule1 = new ConditionalAppearanceModule( );
+      stateMachineModule1 = new StateMachineModule( );
+      coreModule1 = new CoreModule( );
+      securityStrategyComplex1 = new SecurityStrategyComplex( );
+      securityModule1 = new SecurityModule( );
+      authenticationCoreApp1 = new AuthenticationCoreApp( );
+      ( ( ISupportInitialize ) ( this ) ).BeginInit( );
+      // 
+      // sqlConnection1
+      //
+      sqlConnection1.FireInfoMessageEventOnUserErrors = false;
+      // 
+      // reportsModule1
+      // 
+      reportsModule1.EnableInplaceReports = true;
+      reportsModule1.ReportDataType = typeof( ReportData );
+      // 
+      // stateMachineModule1
+      // 
+      stateMachineModule1.StateMachineStorageType = typeof( XpoStateMachine );
+      // 
+      // securityStrategyComplex1
+      // 
+      securityStrategyComplex1.Authentication = authenticationCoreApp1;
+      securityStrategyComplex1.RoleType = typeof( Rol );
+      securityStrategyComplex1.UserType = typeof( Usuario );
+      // 
+      // CoreAspNetApplication
+      // 
+      ApplicationName = "CORE";
+      Connection = sqlConnection1;
+      Modules.Add( systemModule );
+      Modules.Add( systemAspNetModule );
+      Modules.Add( coreModule1 );
+      Modules.Add( cloneObjectModule1 );
+      Modules.Add( reportsModule1 );
+      Modules.Add( validationModule1 );
+      Modules.Add( conditionalAppearanceModule1 );
+      Modules.Add( stateMachineModule1 );
+      Modules.Add( webModule );
+      Modules.Add( securityModule1 );
+      CollectionsEditMode = ViewEditMode.Edit;
+      Security = securityStrategyComplex1;
+      DatabaseVersionMismatch += CoreAspNetApplication_DatabaseVersionMismatch;
+      ( ( ISupportInitialize ) ( this ) ).EndInit( );
+    }
+  }
+}

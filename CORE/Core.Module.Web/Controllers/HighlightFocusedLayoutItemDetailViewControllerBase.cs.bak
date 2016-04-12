@@ -1,0 +1,103 @@
+﻿using System;
+using DevExpress.ExpressApp;
+using DevExpress.ExpressApp.Editors;
+using DevExpress.ExpressApp.Web.Editors;
+using DevExpress.ExpressApp.Web.Editors.ASPx;
+using DevExpress.Web.ASPxClasses;
+
+namespace FDIT.Core.Web.Controllers
+{
+  public abstract class HighlightFocusedLayoutItemDetailViewControllerBase : ViewController< DetailView >
+  {
+    public const string HighlightFocusedLayoutItemAttributeName = "HighlightFocusedLayoutItem";
+    public const string EnableHighlightFocusedLayoutItemAttributeName = "EnableHighlightFocusedLayoutItem";
+    public const string ActiveKeyHighlightFocusedEditor = "HighlightFocusedLayoutItem";
+
+    protected override void OnViewChanging( View view )
+    {
+      base.OnViewChanging( view );
+      var dv = view as DetailView;
+      if( dv != null )
+        Active[ ActiveKeyHighlightFocusedEditor ] = ( ( IModelDetailViewHighlightFocusedLayoutItem ) dv.Model ).HighlightFocusedLayoutItem;
+    }
+
+    protected abstract void ApplyFocusedStyle( object element );
+  }
+
+  public class HighlightFocusedLayoutItemDetailViewController : HighlightFocusedLayoutItemDetailViewControllerBase
+  {
+    private const string ClientSideEventHandlerFunctionFormat = @"function(s,e){{{0}}}";
+
+    protected override void OnActivated( )
+    {
+      base.OnActivated( );
+
+      if( View.ViewEditMode == ViewEditMode.Edit )
+      {
+        foreach( var item in View.GetItems< WebPropertyEditor >( ) )
+        {
+          if( item.Editor != null )
+          {
+            ApplyFocusedStyle( item );
+          }
+          else
+          {
+            item.ControlCreated += ( s, e ) => { ApplyFocusedStyle( s ); };
+          }
+        }
+      }
+    }
+
+    protected override void ApplyFocusedStyle( object element )
+    {
+      var lookupPropertyEditor = element as ASPxLookupPropertyEditor;
+      if( lookupPropertyEditor != null )
+      {
+        if(lookupPropertyEditor.DropDownEdit != null ) ApplyFocusedStyleCore( lookupPropertyEditor.DropDownEdit.DropDown );
+        if(lookupPropertyEditor.FindEdit != null ) ApplyFocusedStyleCore( lookupPropertyEditor.FindEdit.TextBox );
+      }
+      else if( element is WebPropertyEditor )
+      {
+        ApplyFocusedStyleCore( ( ( WebPropertyEditor ) element ).Editor as ASPxWebControl );
+      }
+    }
+
+    private void ApplyFocusedStyleCore( ASPxWebControl dxControl )
+    {
+      if( dxControl != null )
+      {
+        EventHandler loadEventHandler = ( s, e ) =>
+                                        {
+                                          var control = ( ASPxWebControl ) s;
+                                          //These JavaScript functions are defined within the E2106.js file.
+                                          AddEventHandlerSafe( control, "Init", "window.initEditor(s,e);" );
+                                          AddEventHandlerSafe( control, "GotFocus", "window.gotFocusEditor(s,e);" );
+                                        };
+        EventHandler disposedEventHandler = null;
+        disposedEventHandler = ( s, e ) =>
+                               {
+                                 var control = ( ASPxWebControl ) s;
+                                 control.Disposed -= disposedEventHandler;
+                                 control.Load -= loadEventHandler;
+                               };
+
+        dxControl.Disposed += disposedEventHandler;
+        dxControl.Load += loadEventHandler;
+      }
+    }
+
+    private static void AddEventHandlerSafe( ASPxWebControl control, string eventName, string handler )
+    {
+      string existingHandler = control.GetClientSideEventHandler( eventName );
+      if( string.IsNullOrEmpty( existingHandler ) )
+      {
+        control.SetClientSideEventHandler( eventName, string.Format( ClientSideEventHandlerFunctionFormat, handler ) );
+      }
+      else
+      {
+        existingHandler = String.Format( "{0}{1}\r\n}}", existingHandler.Substring( 0, existingHandler.LastIndexOf( '}' ) ), handler );
+        control.SetClientSideEventHandler( eventName, existingHandler );
+      }
+    }
+  }
+}

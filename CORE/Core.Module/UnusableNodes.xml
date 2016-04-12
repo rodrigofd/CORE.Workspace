@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <BOModel Id="BOModel">
+    <Class Name="FDIT.Core.CRM.ActividadTipo">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="TipoIconoX" ImmediatePostData="True" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

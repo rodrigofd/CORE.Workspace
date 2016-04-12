@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+    <ListView Id="FDIT.Core.Personas.AgendaPersonas_ListView" AllowDelete="False" AllowNew="False" />
+  </Views>
+</Application>

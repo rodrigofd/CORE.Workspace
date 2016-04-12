@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="FDIT.Core.Seguridad.Rol_ListView" Removed="True" />
+          <Item Id="FDIT.Core.Seguridad.Usuario_ListView" Removed="True" />
+          <Item Id="MyDetails" Removed="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

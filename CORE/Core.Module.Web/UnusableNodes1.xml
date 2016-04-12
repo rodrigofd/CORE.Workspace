@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <DetailView Id="FDIT.Core.Ventas.Comprobante_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <TabbedGroup Id="Item1">
+              <LayoutGroup Id="Comprobante_2">
+                <LayoutGroup Id="Comprobante_2_col1">
+                  <LayoutGroup Id="Autob93ec7f6-7e40-4594-917f-a5716c30b050">
+                    <LayoutGroup Id="Autodeeb8de5-f02b-4256-ba5e-605e87d811a0">
+                      <LayoutGroup Id="Auto8332a9de-6ee6-4039-9661-d6d3e9e5fdaf">
+                        <LayoutGroup Id="Auto01ef32f4-d272-4cf3-89e8-17ff8efa711c">
+                          <LayoutGroup Id="Item6">
+                            <LayoutItem Id="Moneda" ViewItem="Moneda" />
+                          </LayoutGroup>
+                        </LayoutGroup>
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </TabbedGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>

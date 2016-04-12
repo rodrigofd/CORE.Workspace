@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="FDIT.Core.Personas.Persona_ListView" PreguntarPorFiltro="True" />
+    <DetailView Id="FDIT.Core.Modelo.Sistema.BusinessObject1_DetailView" Removed="True" />
+    <ListView Id="FDIT.Core.Modelo.Sistema.BusinessObject1_ListView" Removed="True" />
+    <ListView Id="FDIT.Core.Modelo.Sistema.BusinessObject1_LookupListView" Removed="True" />
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="FDIT.Core.Modelo.Sistema.BusinessObject1" IsDesigned="True" />
+  </BOModel>
+</Application>

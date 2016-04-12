@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FDIT.Core</RootNamespace>
+    <AssemblyName>FDIT.Core.Module</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'EasyTest|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\EasyTest\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Dashboard.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v13.1.Extensions, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v13.1.Win, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v13.1.UI, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.AuditTrail.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Chart.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.CloneObject.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ConditionalAppearance.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Kpi.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.PivotGrid.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Reports.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Security.Design.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Security.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.StateMachine.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.TreeListEditors.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Validation.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.ViewVariantsModule.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.ExpressApp.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.Base.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.UI, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v13.1.Wizard, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v13.1.Win, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.1.Core, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.1.UI, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v13.1.Extensions, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v13.1.Extensions, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v13.1, Version=13.1.12.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\Compras\ComprobanteController.cs" />
+    <Compile Include="Controllers\Compras\OrdenPagoAplicacionController.cs" />
+    <Compile Include="Controllers\Compras\OrdenPagoController.cs" />
+    <Compile Include="Controllers\Gestion\PagoController.cs" />
+    <Compile Include="Controllers\Gestion\ComprobanteBaseController.cs" />
+    <Compile Include="Controllers\Fondos\ComprobanteItemListViewController.cs" />
+    <Compile Include="Modelo\Sistema\DashboardCreator.cs" />
+    <Compile Include="Modelo\Sistema\DashboardCreator.Designer.cs">
+      <DependentUpon>DashboardCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modelo\Ventas\CuentaCorriente.cs" />
+    <Compile Include="Controllers\Ventas\ReciboAplicacionController.cs" />
+    <Compile Include="Controllers\Ventas\ReciboController.cs" />
+    <Compile Include="Extensiones\FiltroInicial\IModelViewFiltroInicial.cs" />
+    <Compile Include="Extensiones\SoporteStoredProcedures\ConsultaStoredProcedureController.cs" />
+    <Compile Include="Extensiones\SoporteStoredProcedures\ConsultaStoredProcedureAttribute.cs" />
+    <Compile Include="Controllers\Base\ControllerExtensions.cs" />
+    <Compile Include="Controllers\Base\StateMachineActionsController.cs" />
+    <Compile Include="Controllers\Fondos\ComprobanteController.cs" />
+    <Compile Include="Controllers\Fondos\ComprobanteItemDetailViewController.cs" />
+    <Compile Include="Controllers\Fondos\ComprobanteItemValorController.cs" />
+    <None Include="Controllers\Base\GeneralDetailController.cs">
+      <SubType>Component</SubType>
+    </None>
+    <Compile Include="Controllers\Personas\CPAController.cs" />
+    <Compile Include="Controllers\Sistema\IRefreshable.cs" />
+    <Compile Include="CoreModuleBase.cs" />
+    <Compile Include="DatabaseUpdate\UpdaterBase.cs" />
+    <Compile Include="Extensiones\SoporteStoredProcedures\IConsultaStoredProcedure.cs" />
+    <Compile Include="Extensiones\SoporteStoredProcedures\StoredProcedureWindowController.cs" />
+    <Compile Include="IModelLayoutItemWithCaptionWidth.cs" />
+    <Compile Include="Extensiones\SoporteStoredProcedures\IResultadoStoredProcedure.cs" />
+    <Compile Include="Modelo\Compras\Comprobante.cs" />
+    <Compile Include="Modelo\Compras\Identificadores.cs" />
+    <Compile Include="Modelo\Compras\OrdenPago.cs" />
+    <Compile Include="Modelo\Contabilidad\CuentaClase.cs" />
+    <Compile Include="Modelo\Contabilidad\CuentaRubro.cs" />
+    <Compile Include="Modelo\Fondos\ChequeEstado.cs" />
+    <Compile Include="Modelo\Fondos\ComprobanteItemValor.cs" />
+    <Compile Include="Modelo\Fondos\ComprobanteModelo.cs" />
+    <Compile Include="Modelo\Fondos\CuponTarjeta.cs" />
+    <Compile Include="Modelo\Fondos\DebeHaber.cs" />
+    <Compile Include="Modelo\Fondos\RetencionImpuestos.cs" />
+    <Compile Include="Modelo\Fondos\Tarjeta.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteTipoModulo.cs" />
+    <Compile Include="Modelo\Gestion\ConceptoClase.cs" />
+    <Compile Include="Modelo\Gestion\ConceptosIncluidos.cs" />
+    <Compile Include="Modelo\Gestion\DebitoCredito.cs" />
+    <Compile Include="Modelo\Personas\spEjemplo.cs" />
+    <Compile Include="Modelo\Personas\Sexo.cs" />
+    <Compile Include="Modelo\Personas\TipoPersona.cs" />
+    <Compile Include="Modelo\Sistema\ArchivoAdjunto.cs" />
+    <Compile Include="Modelo\Base\IObjetoConItems.cs" />
+    <Compile Include="Controllers\CRM\ActividadResponsableController.cs" />
+    <Compile Include="Controllers\Gestion\PagoAplicacionController.cs" />
+    <Compile Include="Controllers\Sistema\ArchivosAdjuntosController.cs" />
+    <Compile Include="Controllers\Sistema\NotasController.cs" />
+    <Compile Include="Controllers\Sistema\GrupoEmpresaActualController.cs" />
+    <Compile Include="Controllers\Ventas\ComprobanteController.cs" />
+    <Compile Include="Controllers\Personas\RelacionController.cs" />
+    <Compile Include="Controllers\Personas\RolController.cs" />
+    <Compile Include="Extensiones\FiltroInicial\ShowFilterDialogController.cs" />
+    <Compile Include="Extensiones\FiltroInicial\ViewFilterContainer.cs" />
+    <None Include="Controllers\Sistema\CambiarIdiomaController.cs">
+      <SubType>Component</SubType>
+    </None>
+    <Compile Include="Controllers\Base\CustomNavigationController.cs" />
+    <Compile Include="Controllers\Sistema\VinculosController.cs" />
+    <Compile Include="Modelo\Sistema\BasicObjectCloner.cs" />
+    <Compile Include="Modelo\Sistema\Nota.cs" />
+    <Compile Include="Modelo\Sistema\Vinculo.cs" />
+    <Compile Include="Modelo\CRM\ContratoPeriodo.cs" />
+    <Compile Include="Modelo\CRM\Caso.cs" />
+    <Compile Include="Modelo\CRM\CasoEstado.cs" />
+    <Compile Include="Modelo\CRM\CasoResponsable.cs" />
+    <Compile Include="Modelo\CRM\CasoTipo.cs" />
+    <Compile Include="Modelo\CRM\CasoPrioridad.cs" />
+    <Compile Include="Modelo\Fondos\Cheque.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteBase.cs" />
+    <Compile Include="Modelo\Regionales\Identificadores.cs" />
+    <Compile Include="Modelo\Seguridad\Rol.cs" />
+    <Compile Include="Modelo\Sistema\CuentaEmail.cs" />
+    <Compile Include="Modelo\Sistema\PlantillaMensaje.cs" />
+    <Compile Include="Modelo\Stock\Existentes\UnidadMedida.cs" />
+    <Compile Include="Modelo\Stock\Existentes\Servicio.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Articulo.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\ArticuloPorProveedor.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\ArticuloPropiedad.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\ArticuloSerie.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Categoria.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Clase.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\ClasePropiedad.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Comprobante.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Deposito.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\DepositoUbicacion.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Equivalencia.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Insumo.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Movimiento.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Partida.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Propiedad.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\PropiedadValor.cs" />
+    <Compile Include="Modelo\Stock\NuevoModelo\Serie.cs" />
+    <Compile Include="Modelo\Ventas\AgrupacionCliente.cs" />
+    <Compile Include="Modelo\Contabilidad\CentroDeCosto.cs" />
+    <Compile Include="Modelo\Ventas\Cliente.cs" />
+    <Compile Include="Modelo\Gestion\Comprobante.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteEstado.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteItem.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteItemApertura.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteSector.cs" />
+    <Compile Include="Modelo\Gestion\ComprobantesTipoIdentificacionTipo.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteSubtotal.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteTipo.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteTipoCategoria.cs" />
+    <Compile Include="Modelo\Gestion\Concepto.cs" />
+    <Compile Include="Modelo\Gestion\ConceptoApertura.cs" />
+    <Compile Include="Modelo\Gestion\ConceptoGrupo.cs" />
+    <Compile Include="Modelo\Gestion\ConceptoVinculo.cs" />
+    <Compile Include="Modelo\Gestion\CondicionDePago.cs" />
+    <Compile Include="Modelo\CRM\Contrato.cs" />
+    <Compile Include="Modelo\CRM\ContratoItem.cs" />
+    <Compile Include="Modelo\Gestion\ComprobanteCuota.cs" />
+    <Compile Include="Modelo\Ventas\Identificadores.cs" />
+    <Compile Include="Modelo\Gestion\ModeloFormulario.cs" />
+    <Compile Include="Modelo\Ventas\Recibo.cs" />
+    <Compile Include="Modelo\Sistema\Archivo.cs" />
+    <Compile Include="Modelo\Base\IdentificadoresBase.cs" />
+    <Compile Include="Modelo\Base\ConvertToStrFunction.cs" />
+    <Compile Include="Modelo\Ventas\vComprobantes.cs" />
+    <Compile Include="Util\CPA.cs" />
+    <Compile Include="Util\XpoExtensions.cs" />
+    <EmbeddedResource Include="Controllers\Compras\ComprobanteController.resx">
+      <DependentUpon>ComprobanteController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Fondos\ComprobanteController.resx">
+      <DependentUpon>ComprobanteController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modelo\Sistema\DashboardCreator.resx">
+      <DependentUpon>DashboardCreator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modelo\Base\IObjetoConItems.resx">
+      <DependentUpon>IObjetoConItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Gestion\PagoAplicacionController.resx">
+      <DependentUpon>PagoAplicacionController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Ventas\ComprobanteController.resx">
+      <DependentUpon>ComprobanteController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controllers\Personas\RolController.resx">
+      <DependentUpon>RolController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.es.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <Compile Include="Modelo\Gestion\Pago.cs" />
+    <Compile Include="Modelo\Gestion\PagoAplicacion.cs" />
+    <Compile Include="Modelo\Gestion\PagoImpuesto.cs" />
+    <Compile Include="Modelo\Compras\Proveedor.cs" />
+    <Compile Include="Modelo\Compras\ProveedorEmpresa.cs" />
+    <Compile Include="Modelo\Gestion\Talonario.cs" />
+    <Compile Include="Modelo\Contabilidad\Cuenta.cs" />
+    <Compile Include="Modelo\Contabilidad\CuentaPredefinida.cs" />
+    <Compile Include="Modelo\Contabilidad\TipoCuentaPredefinida.cs" />
+    <Compile Include="Modelo\CRM\Actividad.cs" />
+    <Compile Include="Modelo\CRM\ActividadEstado.cs" />
+    <Compile Include="Modelo\CRM\ActividadResponsable.cs" />
+    <Compile Include="Modelo\CRM\ActividadTipo.cs" />
+    <Compile Include="Editors\SimpleComboBoxAttribute.cs" />
+    <Compile Include="Modelo\Fondos\CuentaPredefinida.cs" />
+    <Compile Include="Modelo\Fondos\CentroDeCosto.cs" />
+    <Compile Include="Modelo\Fondos\TipoCuentaPredefinida.cs" />
+    <Compile Include="Modelo\Sistema\Empresa.cs" />
+    <Compile Include="Modelo\Sistema\Grupo.cs" />
+    <Compile Include="Modelo\Sistema\IObjetoPorEmpresa.cs" />
+    <Compile Include="Modelo\Sistema\IObjetoPorGrupo.cs" />
+    <Compile Include="Modelo\Gestion\MarcaComercial.cs" />
+    <Compile Include="Modelo\Fondos\Banco.cs" />
+    <Compile Include="Modelo\Fondos\Comprobante.cs" />
+    <Compile Include="Modelo\Fondos\ComprobanteItem.cs" />
+    <Compile Include="Modelo\Fondos\ComprobanteItemApertura.cs" />
+    <Compile Include="Modelo\Fondos\ComprobanteModeloItem.cs" />
+    <Compile Include="Modelo\Fondos\Cuenta.cs" />
+    <Compile Include="Modelo\Fondos\CuentaChequera.cs" />
+    <Compile Include="Modelo\Fondos\CuentaClase.cs" />
+    <Compile Include="Modelo\Fondos\Identificadores.cs" />
+    <Compile Include="Modelo\Fondos\Valor.cs" />
+    <Compile Include="Modelo\Impuestos\Alicuota.cs" />
+    <Compile Include="Modelo\Impuestos\Categoria.cs" />
+    <Compile Include="Modelo\Impuestos\Impuesto.cs" />
+    <Compile Include="Modelo\Impuestos\Padron.cs" />
+    <Compile Include="Modelo\Impuestos\Regimen.cs" />
+    <Compile Include="Modelo\Impuestos\RetencionEscala.cs" />
+    <Compile Include="Modelo\Personas\ContactoTipo.cs" />
+    <Compile Include="Modelo\Personas\Direccion.cs" />
+    <Compile Include="Modelo\Personas\DireccionTipo.cs" />
+    <Compile Include="Modelo\Personas\Identificacion.cs" />
+    <Compile Include="Modelo\Personas\IdentificacionClase.cs" />
+    <Compile Include="Modelo\Personas\IdentificacionTipo.cs" />
+    <Compile Include="Modelo\Personas\Persona.cs" />
+    <Compile Include="Modelo\Personas\PersonaContacto.cs" />
+    <Compile Include="Modelo\Personas\PersonaDireccion.cs" />
+    <Compile Include="Modelo\Personas\PersonaImpuesto.cs" />
+    <Compile Include="Modelo\Personas\PersonaPropiedad.cs" />
+    <Compile Include="Modelo\Personas\Propiedad.cs" />
+    <Compile Include="Modelo\Personas\PropiedadValor.cs" />
+    <Compile Include="Modelo\Personas\Relacion.cs" />
+    <Compile Include="Modelo\Personas\RelacionTipo.cs" />
+    <Compile Include="Modelo\Personas\RelacionTipoGrupo.cs" />
+    <Compile Include="Modelo\Personas\Rol.cs" />
+    <Compile Include="Modelo\Regionales\Ciudad.cs" />
+    <Compile Include="Modelo\Regionales\Continente.cs" />
+    <Compile Include="Modelo\Fondos\Especie.cs" />
+    <Compile Include="Modelo\Fondos\EspecieCotizacion.cs" />
+    <Compile Include="Modelo\Fondos\EspecieInstrumento.cs" />
+    <Compile Include="Modelo\Regionales\Idioma.cs" />
+    <Compile Include="Modelo\Regionales\Localidad.cs" />
+    <Compile Include="Modelo\Fondos\Moneda.cs" />
+    <Compile Include="Modelo\Regionales\Pais.cs" />
+    <Compile Include="Modelo\Regionales\PaisIdioma.cs" />
+    <Compile Include="Modelo\Fondos\PaisMoneda.cs" />
+    <Compile Include="Modelo\Regionales\Provincia.cs" />
+    <Compile Include="Modelo\Seguridad\AuthenticationCoreApp.cs" />
+    <Compile Include="Modelo\Seguridad\CoreAppLogonParameters.cs" />
+    <Compile Include="Modelo\Seguridad\Usuario.cs" />
+    <Compile Include="Modelo\Stock\Existentes\Almacen.cs" />
+    <Compile Include="Modelo\Compras\ArticuloProveedor.cs" />
+    <Compile Include="Modelo\Stock\Existentes\Existencia.cs" />
+    <Compile Include="Modelo\Stock\Existentes\ListaDePrecios.cs" />
+    <Compile Include="Modelo\Stock\Existentes\Precio.cs" />
+    <Compile Include="Modelo\Gestion\Temporada.cs" />
+    <Compile Include="Modelo\Ventas\Comprobante.cs" />
+    <Compile Include="Modelo\Sistema\BasicObject.cs" />
+    <Compile Include="Modelo\Base\ImageValueConverter.cs" />
+    <Compile Include="CoreModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DatabaseUpdate\Updater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Model.DesignedDiffs.xafml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoreModule.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CoreModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes14.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes6.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes10.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes5.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes4.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes3.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes2.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UnusableNodes1.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Regionales\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes18.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes19.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes20.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes4_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes21.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes5_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes9.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes11.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes12.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes28.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes29.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes30.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes31.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes2_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes32.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes34.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes35.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes3_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes6_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes36.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes37.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes7_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes39.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes8_es.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes40.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UnusableNodes41.xml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
